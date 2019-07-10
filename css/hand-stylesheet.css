@@ -279,7 +279,7 @@ a .site-title {
     margin-bottom:-450px;
     position:relative;
   }
-  .further_projects-left-float {
+  .hand-left-float {
     float:left;
     width:30%;
     margin-top:-450px;
@@ -288,10 +288,10 @@ a .site-title {
 
   /* Responsive Section for Reflection */
   @media only screen and (max-width: 768px) {
-    .mackenzie-right-float {
+    .hand-right-float {
       display:none;
     }
-    .mackenzie-left-float {
+    .hand-left-float {
       display:none;
     }
   }
