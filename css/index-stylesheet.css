@@ -192,7 +192,7 @@ h2 {
   font-weight:700;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 li {
@@ -243,7 +243,7 @@ sup {
 .name {
   margin-top: -20px;
   color:#323232;
-  padding-bottom:15px;
+  padding-bottom:12px;
 }
 #head-nav .container p {
   font-weight: 600;
