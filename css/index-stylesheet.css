@@ -256,7 +256,7 @@ sup {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(../assets/imgs/main-page/balloon_design.svg);
+  background: url(../assets/imgs/main-page/... .svg);
   background-size: cover;
   z-index: -1;
   opacity:0.4;
@@ -837,7 +837,7 @@ figure {
   .col-md-offset-1 {
     margin-left: 8.33333333%;
   }
-
+}
 
 @media screen and (max-width: 425px) {
   .Home .name {
