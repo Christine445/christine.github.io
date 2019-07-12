@@ -357,10 +357,10 @@ a .site-title {
     transition:0.9s;
     background-color: #ffc4b4;
   }
-  .behance-back {
+  .r3-back {
     -webkit-transition:all 0.7s ease
   }
-  .behance-back:hover {
+  .r3-back:hover {
     transition:0.9s;
     background-color: rgb(191, 215, 255);
   }
