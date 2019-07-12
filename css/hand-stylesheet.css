@@ -271,6 +271,11 @@ a .site-title {
     height:auto 0;
 
   }
+.button {
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    -webkit-transition:all 0.7s ease
+}
 
 /* Ending Screen */
   .hand-right-float {
