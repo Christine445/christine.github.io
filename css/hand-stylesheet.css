@@ -362,12 +362,12 @@ a .site-title {
     transition:0.9s;
     background-color: #ffc4b4;
   }
-  .r3-back {
+  .r3-next {
     -webkit-transition:all 0.7s ease
   }
-  .r3-back:hover {
+  .r3-next:hover {
     transition:0.9s;
-    background-color: rgb(191, 215, 255);
+    background-color: rgb(52, 168, 83);
   }
   .arrow {
     text-transform:uppercase;
