@@ -27,12 +27,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-hr.hr-dotted {
-	border-style: none;
-	border-top-style: dotted;
+.hr-start {
 	border-color: grey;
-	border-width: 5px;
-	width: 5%;
+	border-width: 1px;
+	margin-bottom: 3rem;
+    margin-top: 3rem;
+	width: 10%;
 }
 ::selection {
   color: #fcfcfc;
@@ -207,12 +207,12 @@ li {
   line-height: 1.8rem;
 }
 q {
+  color: rgb(195, 195, 195);
   font-size: 1.5rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   padding: 0.7em 0;
-  color: rgb(195, 195, 195);
 }
 sup {
   font-size: 60%;
