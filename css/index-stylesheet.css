@@ -13,7 +13,6 @@ html {
 body {
   margin:0;
   color:#5C5C61;
-  background-color: #FFFFFF;
 }
 .no-gutter > [class*='container'] {
   padding-right:0;
@@ -27,6 +26,13 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+hr.hr-dotted {
+	border-style: none;
+	border-top-style: dotted;
+	border-color: grey;
+	border-width: 5px;
+	width: 5%;
 }
 ::selection {
   color: #fcfcfc;
