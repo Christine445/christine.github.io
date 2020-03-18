@@ -140,7 +140,7 @@
 
   /* Override Bootstrap a */
   a.color-link {
-    color:rgb(50, 50, 50);
+    color: rgb(50, 50, 50);
     text-decoration:none;
     -webkit-transition:all 0.7s ease
   }
@@ -245,10 +245,17 @@ a .site-title {
 .site-title:hover {
   opacity:0.6;
 }
-.nav-list {
+.nav-list.color-link {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(50, 50, 50);
   list-style: none;
   font-size:1.2rem;
   justify-content: space-between;
+}
+.link {
+  display: inline-block;
+  margin: 8px 20px;
+  font-weight: 600;
 }
 
 /*     Navbar      */
@@ -437,7 +444,7 @@ a .site-title {
   .nav-list {
     text-align:right;
   }
-  .nav-list > .link {
+  .nav-list>.link {
     display: block;
     margin: 7px 8px;
     font-size: .9em;
