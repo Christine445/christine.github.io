@@ -37,7 +37,7 @@
     .container-large {
       width:800px
     }
-} 
+}
 
   @media (min-width: 768px) {
    .container-small {
@@ -60,7 +60,7 @@
 .container-small, .container-large {
   max-width: 100%;
 }
-  
+
 /* Universal Styles */
   html {
     /* optimize font rendering */
@@ -68,9 +68,9 @@
     -webkit-text-size-adjust: none;
     text-rendering: optimizeLegibility;
     /* set base font size to 16px */
-    font-size: 100%; 
+    font-size: 100%;
     margin:0;
-    padding:0; 
+    padding:0;
     font-family: 'Ubuntu', 'sans-serif';
   }
   body {
@@ -82,12 +82,23 @@
     padding-left:0;
   }
   .overlay-hover:hover {
-    color:#ff7f00;
+    color:#679895;
     transition:0.3s;
   }
   figure {
     text-align:center;
     font-style:italic;
+  }
+  a.link-r3 {
+    color: #679895;
+    text-decoration: none
+    display: inline-block;
+  }
+
+  a.link-r3:hover {
+    color: #BEE1DD;
+    text-decoration: none;
+    display: inline-block;
   }
 
   /* Scroll Indicator */
@@ -102,7 +113,7 @@
     background: #591D95;
     width: 0%;
   }
-  
+
   /* Strike */
   @keyframes strike{
     0%     { transform-origin:  0% 50%;transform:scaleX(0); }
@@ -127,38 +138,35 @@
 
   /* Override Bootstrap a */
   a.color-link {
-    color:rgb(50, 50, 50);
+    color: rgb(50, 50, 50);
     text-decoration:none;
     -webkit-transition:all 0.7s ease
   }
   a.color-link-prev {
     color:rgb(50, 50, 50);
     text-decoration:none;
-    -webkit-transition:all 0.7s ease
+    -webkit-transition:all 0.1s ease
   }
   a.color-link-prev:hover {
     color: white;
     text-decoration:none;
-    -webkit-transition:all 0.7s ease
+    -webkit-transition:all 0.1s ease
+  }
+  a.color-link-next {
+    color:rgb(50, 50, 50);
+    text-decoration:none;
+    -webkit-transition:all 0.1s ease
+  }
+  a.color-link-next:hover {
+    color: white;
+    text-decoration:none;
+    -webkit-transition:all 0.1s ease
   }
   a.nav-link {
     color:#5C5C61;
     -webkit-transition:all 0.7s ease
   }
-  a.orange-text {
-    color:#ff7f00;
-    text-decoration:none
-  }
-  a.link-hand:hover {
-    color:#ff6338;
-    text-decoration: none;
-    -webkit-transition:all 0.7s ease
-  }
-  a.link-CAD:hover {
-    color:#ff6338;
-    text-decoration: none;
-    -webkit-transition:all 0.7s ease
-  }
+
   /* Text Styles */
   p {
     font-size:20px;
@@ -166,7 +174,7 @@
   }
   .section-title {
     font-size:20px;
-    font-weight:500; 
+    font-weight:500;
     padding-top:15px;
     color:rgb(50, 50, 50);
   }
@@ -176,7 +184,7 @@
     color:rgb(50, 50, 50);
   }
   .sprint-title {
-    color:#34A853;
+    color: #679895;
     font-size:30px;
     font-weight:700;
     padding:10px;
@@ -250,7 +258,7 @@ a .site-title {
   font-weight:600;
 }
 /*     Navbar      */
-  
+
 /* Home Section */
  .spacer {
     padding-top: 60px;
@@ -312,10 +320,10 @@ a .site-title {
       width:400px;
     }
   }
-  
+
   .contact-title {
     letter-spacing:3px;
-    color:#34A853;
+    color: #679895;
     padding-top:20px;
     padding-bottom:20px;
     font-weight:bold;
@@ -323,7 +331,7 @@ a .site-title {
     text-transform:uppercase;
   }
   .btn {
-    background-color:#34A853;
+    background-color: #679895;
     border:none;
     padding:15px 30px;
     margin: 20px 40px;
@@ -332,7 +340,7 @@ a .site-title {
   .btn:hover {
     transform:translatey(-10px);
     box-shadow:0 20px 15px -15px rgb(143, 143, 143);
-    background-color:#34A853;
+    background-color:#BEE1DD;
   }
   .btn-primary {
     letter-spacing:1px;
@@ -357,7 +365,7 @@ a .site-title {
   .next-spacer {
     padding-top:10px;
     padding-bottom:10px;
-  } 
+  }
   .slide-right {
     text-align:right;
   }
@@ -366,15 +374,15 @@ a .site-title {
   }
   .hand-back:hover {
     transition:0.9s;
-    background-color: #591D95;
-	  
+    background-color: #F76160;
+
   }
   .further-projects {
     -webkit-transition:all 0.7s ease
   }
   .further-projects:hover {
     transition:0.9s;
-    background-color: rgb(191, 215, 255);
+    background-color: #4AB19A;
   }
   .arrow {
     text-transform:uppercase;
