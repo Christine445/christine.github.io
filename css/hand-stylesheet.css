@@ -245,9 +245,7 @@ a .site-title {
 .site-title:hover {
   opacity:0.6;
 }
-.nav-list.color-link {
-  font-family: 'Ubuntu', sans-serif;
-  color: rgb(50, 50, 50);
+.nav-list {
   list-style: none;
   font-size:1.2rem;
   justify-content: space-between;
@@ -444,7 +442,7 @@ a .site-title {
   .nav-list {
     text-align:right;
   }
-  .nav-list>.link {
+  .nav-list > .link {
     display: block;
     margin: 7px 8px;
     font-size: .9em;
