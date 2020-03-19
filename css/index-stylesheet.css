@@ -21,7 +21,7 @@ body {
   background-color: #E0EBE8;
   position: relative;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 }
 
 .no-gutter>[class*='container'] {
