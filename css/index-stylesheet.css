@@ -731,7 +731,11 @@ figure {
   .col-md-offset-4 {
     margin-left: 33.33333333%;
   }
-
+  .sticky-top.navbar-fixed {
+  display: flex;
+  justify-content: space-between;
+  }
+  
   .col-md-8 {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
