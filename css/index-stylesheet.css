@@ -77,15 +77,19 @@ a.link-bite:hover {
 
 /*     Navbar      */
 .stickyscroll {
-  background-color: rgba(224, 235, 232, 0.6);
+  background-color: rgba(74, 177, 154, 1);
+}
+.nav-link {
+  color: #fff !important;
 }
 
 .navbar {
   top: 0px;
   z-index: 100;
   padding: 0;
+  margin: 0;
   display: flex;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
 }
 
 .image-brand {
