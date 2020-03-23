@@ -26,7 +26,7 @@ body {
 }
 
 .container-fluid {
-    padding: 0.3% 15%;
+  padding: 0.3% 15%;
 }
 
 .no-gutter>[class*='container'] {
@@ -73,14 +73,15 @@ a.link-bite {
 
 /*     Navbar      */
 .stickyscroll {
-  background-color:rgba(224,235,232,0.6);
+  background-color: rgba(224, 235, 232, 0.6);
 }
+
 .navbar {
   top: 0px;
   z-index: 100;
   padding: 0;
   display: flex;
-  background-color:rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .image-brand {
@@ -681,6 +682,7 @@ figure {
   background-color: #f4f4f4;
   width: 100%;
   height: auto 0;
+  padding-top: 100px;
 }
 
 .next-spacer {
