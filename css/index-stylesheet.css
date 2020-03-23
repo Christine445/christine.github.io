@@ -26,7 +26,7 @@ body {
 }
 
 .container-fluid {
-  padding: 0.3% 15%;
+  padding: 0.3% 12%;
 }
 
 .no-gutter>[class*='container'] {
@@ -731,10 +731,6 @@ figure {
   .col-md-offset-4 {
     margin-left: 33.33333333%;
   }
-  .sticky-top.navbar-fixed {
-  display: flex;
-  justify-content: space-between;
-  }
 
   .col-md-8 {
     -ms-flex-preferred-size: 66.66666667%;
@@ -760,11 +756,4 @@ figure {
     margin-bottom: 280px;
   }
 
-  .global-nav>.container-fluid {
-    padding: 15px;
-  }
-  .sticky-top.navbar-fixed {
-  display: flex;
-  justify-content: space-between;
-  }
 }
