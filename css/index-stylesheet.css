@@ -735,7 +735,7 @@ figure {
   display: flex;
   justify-content: space-between;
   }
-  
+
   .col-md-8 {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
@@ -758,5 +758,9 @@ figure {
 
   .work-thumbnail {
     margin-bottom: 280px;
+  }
+
+  .global-nav>.container-fluid {
+    padding: 15px;
   }
 }
