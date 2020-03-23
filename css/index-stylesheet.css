@@ -9,6 +9,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', 'sans-serif';
+  /* scroll effect: not supported within safari */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,8 +22,11 @@ body {
 .background-deco-hello {
   background-color: #E0EBE8;
   position: relative;
-  padding-top: 70px;
   padding-bottom: 100px;
+}
+
+.container-fluid {
+    padding: 0.3% 15%;
 }
 
 .no-gutter>[class*='container'] {
@@ -66,38 +71,29 @@ a.link-bite {
   text-decoration: none
 }
 
-/* Override Bootstrap a */
 /*     Navbar      */
-.global-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: transparent;
-  z-index: 10;
-  -webkit-transition: height .5s ease, line-height .5s ease;
-  /* Safari */
-  transition: box-shadow .5s ease, background .5s ease;
+.stickyscroll {
+  background-color:rgba(224,235,232,0.6);
 }
-
-.global-nav>.container {
+.navbar {
+  top: 0px;
+  z-index: 100;
+  padding: 0;
   display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding: 0px 0;
-  transition: padding .5s ease;
+  background-color:rgba(0,0,0,0);
 }
 
-.global-nav.-collapse {
-  box-shadow: 0 0 5px #ddd;
-  background: #ffffff;
-  opacity: 0.8;
+.image-brand {
+  width: 30%;
 }
 
-.global-nav.-collapse>.container {
-  padding: 8px 60px;
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a .site-title {
@@ -111,19 +107,6 @@ a .site-title {
   opacity: 0.6;
 }
 
-.nav-list {
-  list-style: none;
-  font-size: 1.2rem;
-  justify-content: space-between;
-}
-
-.link {
-  display: inline-block;
-  margin: 8px 20px;
-  font-weight: 600;
-}
-
-/*     Navbar      */
 .link-roboy {
   color: #71c9ce
 }
@@ -132,13 +115,11 @@ a .site-title {
   color: #71c9ce;
 }
 
-
 /* Work Arrow */
 .arrow1 {
   animation: slide1 1s ease-in-out infinite;
   margin-left: 9px;
 }
-
 
 @keyframes slide1 {
 
@@ -150,12 +131,6 @@ a .site-title {
   50% {
     transform: translate(10px, 0);
   }
-}
-
-.info-progress {
-  line-height: 35px;
-  color: rgb(50, 50, 50);
-  font-size: 20px;
 }
 
 /* Text */
@@ -170,7 +145,7 @@ h1 {
   font-family: 'Just Another Hand', cursive;
   font-size: 3rem;
   font-weight: 300;
-  margin: 70px auto 10px auto;
+  margin: 100px 0 10px 0;
 }
 
 h2 {
@@ -227,27 +202,14 @@ sup {
 }
 
 /* Text */
-#confine {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 3.5rem;
-}
-
-#confine2 {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 3.5rem;
-}
-
 .Home {
-  padding-top: 6rem;
+  padding-top: 0.5rem;
 }
 
-#head-nav .container h3
-  color: #323232;
-  padding-left: 0px;
-  padding-top: 0px;
-  display: inline-flex;
+#head-nav .container h3 color: #323232;
+padding-left: 0;
+padding-top: 0px;
+display: inline-flex;
 }
 
 .name {
@@ -292,18 +254,6 @@ sup {
   -o-transition: all .6s ease;
   transition: all .6s ease;
   position: relative;
-}
-
-.img-bw-sm-icons {
-  /* image hover effect: black and white to color
-	filter: url(filters.svg#grayscale); Firefox 3.5+ */
-  filter: gray;
-  /* IE5+ */
-  -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Chrome Canary */
-  -webkit-transition: all .3s ease-in-out;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 img:hover {
@@ -480,7 +430,6 @@ hr {
   color: transparent !important;
 }
 
-/* Hover Effect 1 */
 /* Button */
 .btn {
   background-color: #34A853;
@@ -513,7 +462,6 @@ hr {
   justify-content: center;
 }
 
-/* Button */
 /* roboy project */
 #work-header {
   background-color: #ff63386e;
@@ -612,87 +560,8 @@ span img {
   text-align: center;
 }
 
-.project-feature {
-  align-items: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-.project-feature h4 {
-  font-size: 1.4rem;
-  padding-bottom: 1rem;
-}
-
-.project-feature h3 {
-  padding: 0.6em 0;
-}
-
-.project-feature .project-number {
-  font-size: 30px;
-  position: relative;
-  padding-top: 10px;
-  color: #ff6338;
-  font-style: italic;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-}
-
-.project-feature .project-number:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 3px;
-  top: 0;
-  left: 0;
-  background: #ff6338;
-}
-
 .pull-right {
   text-align: right;
-}
-
-.underline {
-  padding-bottom: 6px;
-  border-bottom: 2px solid transparent;
-  -o-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.underline:hover {
-  border-bottom: 2px solid #F76160;
-  opacity: 0.6;
-}
-
-.underline-orange {
-  padding-bottom: 6px;
-  border-bottom: 2px solid transparent;
-  -o-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.underline-orange:hover {
-  border-bottom: 2px solid #F76160;
-  opacity: 0.6;
-}
-
-.row .roboypro {
-  padding: 0.5rem 3rem;
-}
-
-.row .pull-right span {
-  color: #F76160;
-}
-
-.roboy-pro {
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .remover .row {
@@ -772,10 +641,10 @@ figure {
   font-style: italic;
 }
 
-/* Universal Footer */
+/* Footer */
 .background-deco-footer {
   background-color: #4AB19A;
-  padding: 50px 0 20px;
+  padding: 20px 0 20px;
 }
 
 .social-links {
@@ -843,16 +712,7 @@ figure {
   text-align: right;
 }
 
-/* Scroll Effect */
-.fadein {
-  opacity: 0;
-  transform: translateY(0px);
-  -webkit-transition: 0.8s;
-  /* Safari */
-  transition: 0.8s;
-}
-
-/* Scroll Effect */
+/* Media Query */
 @media only screen and (min-width: 1200px) {
   .container {
     padding-right: .5rem;
@@ -915,23 +775,5 @@ figure {
 
   .work-thumbnail {
     margin-bottom: 280px;
-  }
-
-  .global-nav>.container {
-    padding: 15px;
-  }
-
-  .global-nav.-collapse>.container {
-    padding: 2px 20px;
-  }
-
-  .nav-list {
-    text-align: right;
-  }
-
-  .nav-list>.link {
-    display: block;
-    margin: 7px 8px;
-    font-size: .9em;
   }
 }

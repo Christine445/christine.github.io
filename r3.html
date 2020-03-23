@@ -48,23 +48,36 @@
 
 
 <body>
-  <!--   Nav   -->
-  <header class="global-nav">
-    <div class="container -collapse fadeInDown animated">
-      <a href="index.html">
-        <img src="assets/img/favicons/android-chrome-192x192.png" class="site-title">
-      </a>
-      <nav class="nav-list">
-        <a href="index.html#work-wrap" class="color-link link">Projects</a>
-        <a href="index.html#about" class="color-link link">About</a>
+    <!--   Nav Bar  -->
+    <div class="container-fluid sticky-top navbar-fixed stickyscroll style="background-color: #679895"">
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <a href="index.html">
+          <img src="assets/img/favicons/android-chrome-192x192.png" alt="Picture Christine" class="navbar-brand image-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+                <!-- <span class="sr-only">(current)</span> -->
+            </li>
+            <li class="nav-item">
+              <a href="index.html#Projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#About" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-  </header>
 
 
   <!--   Researach Reviews Intro   -->
   <section id="research-intro">
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #679895">
       <div class="row no-gutter">
         <div class="col-md-12 col-sm-12 col-xs-12 mobile-header">
           <img src="assets/img/r3/Roboy_playing_piano_green_for_website.gif" class="img-fluid hand-pics fadeIn animated">
@@ -373,9 +386,8 @@
   <!--     Footer     -->
   <!--    Scripts     -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/smooth-scroll.js"></script>
+  <!--JavaScript-->
   <script src="js/nav-animation.js"></script>
-  <script src="js/fadein-effect.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

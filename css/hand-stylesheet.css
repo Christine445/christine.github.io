@@ -72,11 +72,18 @@
     margin:0;
     padding:0;
     font-family: 'Ubuntu', 'sans-serif';
+    /* scroll effect: not supported within safari */
+    scroll-behavior: smooth;
   }
   body {
     margin:0;
     color:#5C5C61;
   }
+
+  .container-fluid {
+    padding: 0.3% 15%;
+  }
+
   .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -209,6 +216,54 @@
   }
 
 /*     Navbar      */
+.stickyscroll {
+  background-color: #1A0846;
+}
+.navbar {
+  top: 0px;
+  z-index: 100;
+  padding: 0;
+  display: flex;
+  /* background-color:rgba(0,0,0,0); */
+}
+.nav-link {
+  color: #fff !important;
+}
+
+.image-brand {
+  width: 30%;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-image {
+    background: url("../assets/img/hand/header-roboy.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.image-brand{
+  width: 30%;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .global-nav {
   position: fixed;
   top: 0;
