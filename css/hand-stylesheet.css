@@ -226,7 +226,7 @@
   display: flex;
   /* background-color:rgba(0,0,0,0); */
 }
-.nav-link {
+.nav-link .navbar-toggler-icon {
   color: #fff !important;
 }
 
@@ -243,14 +243,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.bg-image {
-    background: url("../assets/img/hand/header-roboy.jpg");
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 .image-brand{
   width: 30%;
 }
@@ -264,33 +256,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.global-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: transparent;
-  z-index: 10;
-  -webkit-transition: height .5s ease, line-height .5s ease; /* Safari */
-  transition: box-shadow .5s ease, background .5s ease;
-}
-.global-nav > .container {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding: 20px 0;
-  transition: padding .5s ease;
-}
-.global-nav.-collapse {
-  box-shadow: 0 0 5px #ddd;
-  background: #fff;
-  opacity: 0.8;
-}
-.global-nav.-collapse > .container {
-  padding: 8px 60px;
-}
 a .site-title {
   vertical-align: -webkit-baseline-middle;
   -webkit-transition: all .4s;
@@ -383,7 +348,7 @@ a .site-title {
     letter-spacing:3px;
     color: #21364B
     padding-top:20px;
-    padding-bottom:20px;
+    padding-bottom:50px;
     font-weight:bold;
     font-size:18px;
     text-transform:uppercase;
@@ -488,12 +453,6 @@ a .site-title {
 }
 
  @media screen and (max-width: 425px) {
-  .global-nav >.container {
-    padding: 15px;
-  }
-  .global-nav.-collapse > .container {
-    padding: 2px 20px;
-  }
   .nav-list {
     text-align:right;
   }
