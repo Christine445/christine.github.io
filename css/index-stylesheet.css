@@ -763,4 +763,8 @@ figure {
   .global-nav>.container-fluid {
     padding: 15px;
   }
+  .sticky-top.navbar-fixed {
+  display: flex;
+  justify-content: space-between;
+  }
 }
