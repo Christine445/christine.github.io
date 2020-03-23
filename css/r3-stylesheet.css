@@ -93,11 +93,6 @@ body {
   padding: 0% 15%;
 }
 
-.no-gutter>[class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 .overlay-hover:hover {
   color: #679895;
   transition: 0.3s;
