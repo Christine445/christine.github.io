@@ -347,12 +347,16 @@ a .site-title {
   padding-top: 150px;
 }
 
-.hand-pics {
-  width: 100%;
-  height: auto 0;
+.r3-animated-gif {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  background-color: #679895 !important;
 }
 
-.finger-pic {
+.paper-pic {
   width: 100%;
   height: auto 0;
 }
