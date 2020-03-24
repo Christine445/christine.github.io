@@ -303,10 +303,18 @@ a .site-title {
   .work-spacer {
     padding-top:150px;
   }
-  .hand-pics {
-    width:100%;
-    height:auto 0;
+  .header-pic {
+    /* position: fixed; */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #679895 !important;
   }
+
+
+
   .finger-pic {
     width:100%;
     height:auto 0;
