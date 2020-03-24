@@ -112,10 +112,12 @@
     text-decoration: none;
     display: inline-block;
   }
-
+  .hand-pics {
+    width:100%;
+    height:auto 0;
+  }
 
   /* Scroll Indicator */
-
   .progress-container {
     width: 10%;
     height: 5px;
