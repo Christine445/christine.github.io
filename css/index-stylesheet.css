@@ -65,14 +65,22 @@ a.link-index:hover {
   color: #58D6B9;
   text-decoration: none;
 }
-a.link-bite {
-  color: #4AB19A;
-  text-decoration: none
-}
 
-a.link-bite:hover {
-  color: #58D6B9;
+a .dontbite {
+  color: #4AB19A;
   text-decoration: none;
+  display: inline;
+}
+a .doI {
+  display: none;
+}
+a:hover .dontbite {
+  display: none;
+}
+a:hover .doI {
+  color: #58D6B9;
+  /* text-decoration: none; */
+  display: inline;
 }
 
 /*     Navbar      */

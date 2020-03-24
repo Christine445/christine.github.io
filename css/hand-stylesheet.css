@@ -88,6 +88,10 @@
     padding: 0.3% 12%;
   }
 
+  .container-fluid.end-section {
+    padding: 15% 12%;
+  }
+
   .overlay-hover:hover {
     color: #9B6AA1;
     transition:0.3s;
@@ -185,7 +189,7 @@
   .section-title {
     font-size:20px;
     font-weight:500;
-    padding-top:15px;
+    padding-top:25px;
     color:rgb(50, 50, 50);
   }
   .section-sub-title {
@@ -197,7 +201,7 @@
     color: #31355B;
     font-size:30px;
     font-weight:700;
-    padding:10px;
+    padding:15px;
   }
   .work-title {
     font-size:50px;
@@ -359,8 +363,8 @@ a .site-title {
   .contact-title {
     letter-spacing:3px;
     color: #21364B
-    padding-top:20px;
-    padding-bottom:50px;
+    padding-top:40px;
+    padding-bottom:30px;
     font-weight:bold;
     font-size:18px;
     text-transform:uppercase;
