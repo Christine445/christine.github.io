@@ -79,14 +79,10 @@ a:hover .dontbite {
 }
 a:hover .doI {
   color: #58D6B9;
-  /* text-decoration: none; */
   display: inline;
 }
 
 /*     Navbar      */
-.stickyscroll {
-  background-color: rgba(74, 177, 154, 1);
-}
 .nav-link {
   color: #fff !important;
 }
@@ -94,11 +90,13 @@ a:hover .doI {
 .navbar {
   top: 0px;
   z-index: 100;
-  padding: 0;
+  padding: 0.3% 12%;
   margin: 0;
   display: flex;
+  background-color: rgba(74, 177, 154, 1);
   /* background-color: rgba(0, 0, 0, 0); */
 }
+
 
 .image-brand {
   width: 30%;
