@@ -215,7 +215,6 @@ p {
 .section-title {
   font-size: 20px;
   font-weight: 500;
-  /* padding-top: 25px; */
   color: rgb(50, 50, 50);
 }
 
@@ -370,14 +369,14 @@ a .site-title {
 .r3_logo-right-float {
   float: right;
   width: 15%;
-  margin-bottom: -500px;
+  margin-bottom: -580px;
   position: relative;
 }
 
 .r3_logo-left-float {
   float: left;
   width: 15%;
-  margin-top: -300px;
+  margin-top: -280px;
   position: relative;
 }
 
@@ -441,6 +440,7 @@ a .site-title {
   background-color: #f4f4f4;
   width: 100%;
   height: auto 0;
+  padding-top: 25px;
 }
 
 .next-spacer {
