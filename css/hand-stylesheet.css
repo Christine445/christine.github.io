@@ -225,7 +225,7 @@ p {
 .section-title {
   font-size: 20px;
   font-weight: 500;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   color: rgb(50, 50, 50);
 }
 
@@ -367,6 +367,8 @@ a .site-title {
 .finger-pic {
   width: 100%;
   height: auto 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .button {
@@ -449,7 +451,6 @@ a .site-title {
   background-color: #f4f4f4;
   width: 100%;
   padding-bottom: 50px;
-  padding-top: 50px;
 }
 
 .next-spacer {
