@@ -28,7 +28,7 @@
   }
 }
 
-/* Container Override for P */
+/* Container */
 @media only screen and (max-width: 600px) {
   .work-spacer {
     padding-top: 55px !important;
@@ -48,7 +48,6 @@
 @media (min-width: 768px) {
   .container-small {
     width: 600px;
-    padding-top: 25px;
   }
 
   .container-large {
@@ -216,8 +215,15 @@ p {
 .section-title {
   font-size: 20px;
   font-weight: 500;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   color: rgb(50, 50, 50);
+}
+
+.section-title-r3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(50, 50, 50);
+  padding-bottom: 25px;
 }
 
 .section-sub-title {
@@ -364,14 +370,14 @@ a .site-title {
 .r3_logo-right-float {
   float: right;
   width: 15%;
-  margin-bottom: -450px;
+  margin-bottom: -500px;
   position: relative;
 }
 
 .r3_logo-left-float {
   float: left;
   width: 15%;
-  margin-top: -450px;
+  margin-top: -300px;
   position: relative;
 }
 
@@ -524,7 +530,7 @@ a .site-title {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
-  padding-top: 25px;
+  /* padding-top: 25px; */
   height: 0;
 }
 

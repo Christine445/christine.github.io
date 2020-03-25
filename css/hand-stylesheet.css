@@ -28,7 +28,7 @@
   }
 }
 
-/* Container Override for P */
+/* Containe */
 @media only screen and (max-width: 600px) {
   .work-spacer {
     padding-top: 55px !important;
@@ -494,6 +494,9 @@ a .site-title {
 }
 
 /* Universal Footer */
+.footer {
+  padding-top: 25px;
+}
 .social-links {
   display: inline;
   margin-left: 80px;
