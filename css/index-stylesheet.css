@@ -241,7 +241,7 @@ display: inline-flex;
 
 .Project {
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -568,9 +568,8 @@ span img {
 }
 
 /* About */
-.about-top {
-  padding-top: 50px;
-  padding-bottom: 20px;
+.about-me-writing {
+padding-bottom: 30px;
 }
 
 .about-section {
@@ -586,8 +585,8 @@ div .about-links {
 div .about-links a {
   position: relative;
   display: block;
-  padding: 0 20px;
-  margin: 0 20px;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .about-links:hover {
@@ -759,7 +758,7 @@ figure {
   }
 
   .work-thumbnail {
-    margin-bottom: 280px;
+    margin-bottom: 170px;
   }
 
 }
