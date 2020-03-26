@@ -1,6 +1,11 @@
 body {
   text-align: center;
   background-color: #679895;
+  /* optimize font rendering */
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  font-family: 'Ubuntu', 'sans-serif';
 }
 
 h1 {
