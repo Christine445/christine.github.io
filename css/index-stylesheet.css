@@ -1,5 +1,5 @@
 /* CSS Document */
-/* Universal Styles */
+
 html {
   /* optimize font rendering */
   -webkit-font-smoothing: antialiased;
@@ -29,10 +29,11 @@ body {
   padding: 0.3% 12%;
 }
 
-.no-gutter>[class*='container'] {
+/* only effects the columns directly beneath a row */
+/* .no-gutter>[class*='container'] {
   padding-right: 0;
   padding-left: 0;
-}
+} */
 
 .overlay-hover:hover {
   color: #ff7f00;
@@ -220,8 +221,9 @@ sup {
 .Home {
   padding-top: 0.5rem;
 }
-
-#head-nav .container h3 color: #323232;
+/* h3 */
+#head-nav .container {
+color: #323232;
 padding-left: 0;
 padding-top: 0px;
 display: inline-flex;
@@ -361,9 +363,17 @@ img:hover {
   height: auto;
 }
 
-.side h3 {
-  color: #323232;
+.further {
+  margin-top: 10rem;
   margin-bottom: 5rem;
+}
+.further-projects{
+  margin-top: 30px;
+}
+
+.side h3 {
+  color: #323232
+  margin-bottom: 7rem;
   text-align: center;
   opacity: 0.5;
 }
@@ -377,6 +387,7 @@ img:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 
 .side-projects-link {
   display: -webkit-inline-box;
@@ -575,6 +586,9 @@ padding-bottom: 30px;
 .about-section {
   padding-top: 45px;
 }
+.about-pic{
+  padding-bottom: 25px;
+}
 
 div .about-links {
   padding: 0;
@@ -585,8 +599,8 @@ div .about-links {
 div .about-links a {
   position: relative;
   display: block;
-  padding: 0 10px;
-  margin: 0 10px;
+  padding: 0 14px;
+  /* margin: 0 8px; */
 }
 
 .about-links:hover {
