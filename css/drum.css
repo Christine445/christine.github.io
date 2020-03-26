@@ -1,11 +1,7 @@
 body {
   text-align: center;
   background-color: #679895;
-  /* optimize font rendering */
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-  text-rendering: optimizeLegibility;
-  font-family: 'Ubuntu', 'sans-serif';
+  padding-top: 60px;
 }
 
 h1 {
@@ -13,7 +9,6 @@ h1 {
   color: #E0EBE8;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #31355B;
-
 }
 
 footer {
@@ -22,31 +17,31 @@ footer {
 }
 
 .w {
-  background-image: url("assets/img/drum/tom1.png");
+  background-image: url("../assets/img/drum/tom1.png");
 }
 
 .a {
-  background-image: url("assets/img/drum/tom2.png");
+  background-image: url("../assets/img/drum/tom2.png");
 }
 
 .s {
-  background-image: url("assets/img/drum/tom3.png");
+  background-image: url("../assets/img/drum/tom3.png");
 }
 
 .d {
-  background-image: url("assets/img/drum/tom4.png");
+  background-image: url("../assets/img/drum/tom4.png");
 }
 
 .j {
-  background-image: url("assets/img/drum/snare.png");
+  background-image: url("../assets/img/drum/snare.png");
 }
 
 .k {
-    background-image: url("assets/img/drum/crash.png");
+    background-image: url("../assets/img/drum/crash.png");
 }
 
 .l {
-background-image: url("assets/img/drum/kick.png");
+background-image: url("../assets/img/drum/kick.png");
 }
 
 .set {
