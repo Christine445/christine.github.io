@@ -179,7 +179,7 @@ h3 {
   font-size: 2rem;
   font-weight: 700;
   margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -376,7 +376,7 @@ img:hover {
 
 .side h3 {
   color: #323232
-  margin-bottom: 30px;
+  padding-bottom: 7em;
   text-align: center;
   opacity: 0.5;
 }
