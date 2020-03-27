@@ -485,6 +485,14 @@ a .site-title {
   background-color: #F76160;
 }
 
+.further-projects {
+  -webkit-transition: all 0.7s ease
+}
+
+.further-projects:hover {
+  transition: 0.9s;
+  background-color: #4AB19A;
+}
 .r3-next {
   -webkit-transition: all 0.7s ease
 }
