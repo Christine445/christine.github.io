@@ -499,17 +499,9 @@ a .site-title {
   font-size: 14px;
 }
 
-.footer-nav>a:first-child {
-  text-align: left;
-}
-
-.footer-nav>a:last-child {
-  text-align: right;
-}
-
 /* Universal Footer */
-.footer {
-  padding-top: 25px;
+.social-icon {
+  margin: 10px 10px;
 }
 
 .social-links {

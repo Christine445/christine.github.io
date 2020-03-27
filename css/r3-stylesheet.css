@@ -474,6 +474,9 @@ a .site-title {
 }
 
 /* Footer */
+.social-icon {
+  margin: 10px 10px;
+}
 .social-links {
   display: inline;
   margin-left: 80px;
