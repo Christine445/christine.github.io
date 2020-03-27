@@ -67,7 +67,8 @@ a.link-index:hover {
   text-decoration: none;
 }
 a.link-drum{
-  text-decoration: none
+  color: #5C5C61;
+  text-decoration: none;
 }
 
 a .dontbite {
@@ -375,7 +376,7 @@ img:hover {
 
 .side h3 {
   color: #323232
-  margin-bottom: 7rem;
+  margin-bottom: 30px;
   text-align: center;
   opacity: 0.5;
 }
