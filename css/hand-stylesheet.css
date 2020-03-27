@@ -5,6 +5,10 @@
   /*h1,h2,h3,h4, {
       font-size:25px;
     }*/
+  h3 {
+    font-size: 1.1em;
+  }
+
   h5 {
     font-size: 14px;
   }
@@ -21,6 +25,10 @@
 
   .slide-right {
     text-align: right !important;
+  }
+
+  .slide-left {
+    text-align: left !important;
   }
 
   .spacer {
@@ -218,14 +226,15 @@ a.nav-link {
 
 /* Text Styles */
 p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  /* font-weight: 400; */
+  line-height: 1.8rem;
 }
 
 .section-title {
   font-size: 20px;
   font-weight: 500;
-  /* padding-top: 25px; */
+  padding-top: 10px;
   color: rgb(50, 50, 50);
 }
 
@@ -450,7 +459,8 @@ a .site-title {
 .background-deco {
   background-color: #f4f4f4;
   width: 100%;
-  padding-bottom: 50px;
+  height: auto 0;
+  padding: 25px 0 20px 0;
 }
 
 .next-spacer {
@@ -460,6 +470,10 @@ a .site-title {
 
 .slide-right {
   text-align: right;
+}
+
+.slide-left {
+  text-align: left;
 }
 
 .hand-back {
@@ -497,6 +511,7 @@ a .site-title {
 .footer {
   padding-top: 25px;
 }
+
 .social-links {
   display: inline;
   margin-left: 80px;
@@ -514,11 +529,6 @@ a .site-title {
 .social-list {
   margin-left: 30px;
   list-style: none;
-}
-
-.resize-for-pages {
-  margin-bottom: 1.8rem;
-  font-size: 16px;
 }
 
 .videoWrapper {
