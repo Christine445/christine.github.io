@@ -248,7 +248,7 @@ sup {
 
 .R3_videos {
   display: none;
-  image: no-repeat center top;
+  /* image: no-repeat center top; */
 }
 
 .work-thumbnail {
@@ -768,7 +768,7 @@ figure {
     margin-left: 8.33333333%;
   }
 
-  #video {
+  .work-thumbnail #video {
     display: none !important;
   }
 
@@ -786,7 +786,7 @@ figure {
     margin-bottom: 170px;
   }
 
-  #video {
+  .work-thumbnail #video {
     display: none !important;
   }
   .R3_videos {
