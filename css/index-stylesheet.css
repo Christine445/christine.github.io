@@ -1,5 +1,4 @@
 /* CSS Document */
-
 html {
   /* optimize font rendering */
   -webkit-font-smoothing: antialiased;
@@ -28,12 +27,6 @@ body {
 .container-fluid {
   padding: 0.3% 12%;
 }
-
-/* only effects the columns directly beneath a row */
-/* .no-gutter>[class*='container'] {
-  padding-right: 0;
-  padding-left: 0;
-} */
 
 .overlay-hover:hover {
   color: #ff7f00;
@@ -66,7 +59,8 @@ a.link-index:hover {
   color: #58D6B9;
   text-decoration: none;
 }
-a.link-drum{
+
+a.link-drum {
   color: #5C5C61;
   text-decoration: none;
 }
@@ -76,12 +70,15 @@ a .dontbite {
   text-decoration: none;
   display: inline;
 }
+
 a .doI {
   display: none;
 }
+
 a:hover .dontbite {
   display: none;
 }
+
 a:hover .doI {
   color: #58D6B9;
   display: inline;
@@ -91,7 +88,6 @@ a:hover .doI {
 .nav-link {
   color: #fff !important;
 }
-
 
 .navbar {
   top: 0px;
@@ -224,12 +220,13 @@ sup {
 .Home {
   padding-top: 0.5rem;
 }
+
 /* h3 */
 #head-nav .container {
-color: #323232;
-padding-left: 0;
-padding-top: 0px;
-display: inline-flex;
+  color: #323232;
+  padding-left: 0;
+  padding-top: 0px;
+  display: inline-flex;
 }
 
 .name {
@@ -249,6 +246,10 @@ display: inline-flex;
   margin-bottom: 3rem;
 }
 
+.R3_videos {
+  display: none;
+  image: no-repeat center top;
+}
 
 .work-thumbnail {
   position: relative;
@@ -370,18 +371,18 @@ img:hover {
   margin-top: 10rem;
   margin-bottom: 5rem;
 }
-.further-projects{
+
+.further-projects {
   margin-top: 30px;
 }
 
 .side h3 {
-  color: #323232
-  padding-bottom: 7em;
+  color: #323232 padding-bottom: 7em;
   text-align: center;
   opacity: 0.5;
 }
 
-.main.projects{
+.main.projects {
   margin-top: 7rem;
   margin-bottom: 3rem;
 }
@@ -390,7 +391,6 @@ img:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 
 .side-projects-link {
   display: -webkit-inline-box;
@@ -426,7 +426,6 @@ hr {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
-
 
 /* Button */
 .btn {
@@ -583,13 +582,14 @@ span img {
 
 /* About */
 .about-me-writing {
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .about-section {
   padding-top: 45px;
 }
-.about-pic{
+
+.about-pic {
   padding-bottom: 25px;
 }
 
@@ -767,6 +767,14 @@ figure {
   .col-md-offset-1 {
     margin-left: 8.33333333%;
   }
+
+  #video {
+    display: none !important;
+  }
+
+  .R3_videos {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -778,4 +786,10 @@ figure {
     margin-bottom: 170px;
   }
 
+  #video {
+    display: none !important;
+  }
+  .R3_videos {
+    display: block;
+  }
 }
