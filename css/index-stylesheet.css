@@ -773,7 +773,7 @@ figure {
   }
 
   .R3_videos {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -790,6 +790,6 @@ figure {
     display: none !important;
   }
   .R3_videos {
-    display: block;
+    display: block !important;
   }
 }
