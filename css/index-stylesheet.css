@@ -589,13 +589,10 @@ span img {
   padding-left: 1%;
 }
 
-.about-section {
-  padding-top: 45px;
-}
-
 .about-pic {
   padding-bottom: 10px;
   display: block;
+  /* width: 100%; */
 }
 
 div .about-links {
@@ -633,11 +630,11 @@ div .about-links a {
 }
 
 .order-first {
-  padding-bottom: 25px;
+  padding: 0 5% 2% 5%;
 }
 
 .work-title {
-  font-weight: 0.8em;
+  font-weight: 0.7em;
 }
 
 .gray-timeline {
@@ -690,7 +687,7 @@ figure {
   background-color: #f4f4f4;
   width: 100%;
   height: auto 0;
-  padding-top: 100px;
+  padding-top: 10%;
 }
 
 .next-spacer {
