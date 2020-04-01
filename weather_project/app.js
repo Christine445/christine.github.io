@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/weather_project/weather.html");
+  res.sendFile(__dirname + "/weather.html");
 })
 
 app.post("/", function(req, res) {
