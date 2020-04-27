@@ -45,7 +45,8 @@ header {
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 3em;
+  margin: 0;
 }
 
 h1, .subhead {
@@ -132,19 +133,21 @@ figcaption {
 }
 
 h2 {
-  margin-top: 7%;
+  margin-top: 15%;
+  font-size: 1.5em;
+  padding-bottom: 8px;
 }
 
 .cta {
   background: #00CC80;
-  width: calc(100%- 1em);
+  /* width: calc(100%- 1em); */
   display: block;
   color: #fff;
   border-radius: 20px;
   padding: .5em;
   text-decoration: none;
   font-size: 1.5em;
-  margin: 3% auto 7%;
+  margin: 5% auto 20%;
   position: relative;
   z-index: 4;
 }
@@ -199,16 +202,6 @@ ul.footer-links li a {
   text-decoration: underline;
 }
 
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
 nav ul {
   position: fixed;
   width: 60%;
@@ -225,7 +218,8 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
-  width: 100% padding: 1em 2em;
+  width: 100%;
+  padding: 1em 2em;
   background-color: rgb(49, 55, 59);
 }
 
@@ -313,11 +307,12 @@ nav ul li a:hover {
 @media screen and (min-width: 1024px) {
   .cta {
     width: 50%;
+    margin-bottom: 15%;
   }
 
   .container {
     width: 80%;
-    margin: 5em auto;
+    margin: 0 auto;
   }
 
   .show-desktop {
@@ -355,7 +350,7 @@ nav ul li a:hover {
 
   .blue-container ul li p, blockquote {
     font-size: 1.3em;
-    padding: 0 .5em 0;
+    padding: 0 .7em 0;
   }
 
   .scroll {
@@ -397,7 +392,9 @@ nav ul li a:hover {
     }
 
     h2 {
-      maring-top: 4em;
+      margin-top: 4em;
+      margin-bottom: 1.1em;
+      font-size: 2em;
     }
 
     .blue-container img {
