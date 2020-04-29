@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="850.988" height="454.011" viewBox="0 0 850.988 454.011">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.37" y1="0.233" x2="-0.253" y2="0.299" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="gray"/>
+    </linearGradient>
+  </defs>
+  <g id="server" transform="translate(-741.739 -210.093)">
+    <path id="shadow" d="M960,634.331h648.979V457.8H960Z" transform="translate(-16.252 -17.106)" fill="url(#linear-gradient)"/>
+    <line id="Linie_2" data-name="Linie 2" x2="135.328" y2="86.202" transform="translate(744.5 305.942)" fill="none" stroke="#01c2ff" stroke-linecap="round" stroke-width="4" stroke-dasharray="14 12"/>
+    <g id="pc1" transform="translate(759.743 275.866)">
+      <path id="Pfad_2" data-name="Pfad 2" d="M23.3,23.3,115.329,0,96,96,0,115.329Z" transform="translate(81.55 0) rotate(45)" fill="#4eedff"/>
+      <path id="Pfad_3" data-name="Pfad 3" d="M23.3,23.3,115.329,0,96,96,0,115.329Z" transform="translate(81.55 103.361) rotate(45)" fill="#00c2ff"/>
+      <path id="Pfad_4" data-name="Pfad 4" d="M916.093,407V510.092l81.444,54.344V460.049Z" transform="translate(-916.093 -325.45)" fill="#00c2ff"/>
+      <path id="Pfad_5" data-name="Pfad 5" d="M916.093,407V510.092l81.444,54.344V460.049Z" transform="translate(-916.093 -325.45)" fill="#00c2ff"/>
+      <path id="Pfad_7" data-name="Pfad 7" d="M916.093,407v7.344l5.8,3.871v-7.436Z" transform="translate(-906.281 -297.761)" fill="#c9f2ff"/>
+      <path id="Pfad_7-2" data-name="Pfad 7" d="M916.093,407v7.344l5.8,3.871v-7.436Z" transform="translate(-906.281 -286.726)" fill="#c9f2ff"/>
+      <path id="Pfad_7-3" data-name="Pfad 7" d="M916.093,407v7.344l5.8,3.871v-7.436Z" transform="translate(-906.281 -275.691)" fill="#c9f2ff"/>
+      <path id="Pfad_7-4" data-name="Pfad 7" d="M916.093,407v7.344l5.8,3.871v-7.436Z" transform="translate(-906.281 -264.656)" fill="#c9f2ff"/>
+      <path id="Pfad_7-5" data-name="Pfad 7" d="M916.093,407v7.344l5.8,3.871v-7.436Z" transform="translate(-906.281 -253.621)" fill="#c9f2ff"/>
+      <path id="Pfad_7-6" data-name="Pfad 7" d="M916.093,407v7.344l5.8,3.871v-7.436Z" transform="translate(-906.281 -242.586)" fill="#c9f2ff"/>
+      <path id="Pfad_7-7" data-name="Pfad 7" d="M916.093,407v7.344l23.092,15.224v-7.436Z" transform="translate(-895.64 -291.061)" fill="#0058cb"/>
+      <path id="Pfad_8" data-name="Pfad 8" d="M916.093,407v7.344l20.137,12.378v-7.436Z" transform="translate(-867.886 -273.78)" fill="#85feea"/>
+      <path id="Pfad_8-2" data-name="Pfad 8" d="M916.093,407v7.344l20.137,12.378v-7.436Z" transform="translate(-867.886 -262.783)" fill="#85feea"/>
+      <path id="Pfad_8-3" data-name="Pfad 8" d="M916.093,407v7.344l20.137,12.378v-7.436Z" transform="translate(-867.886 -251.785)" fill="#85feea"/>
+      <path id="Pfad_8-4" data-name="Pfad 8" d="M916.093,407v7.344l20.137,12.378v-7.436Z" transform="translate(-867.886 -240.788)" fill="#85feea"/>
+      <path id="Pfad_8-5" data-name="Pfad 8" d="M916.093,407v7.344l20.137,12.378v-7.436Z" transform="translate(-867.886 -229.791)" fill="#85feea"/>
+      <path id="Pfad_8-6" data-name="Pfad 8" d="M916.093,407v7.344l20.137,12.378v-7.436Z" transform="translate(-867.886 -218.794)" fill="#85feea"/>
+      <path id="Pfad_7-8" data-name="Pfad 7" d="M916.093,407v7.344l23.092,15.224v-7.436Z" transform="translate(-895.64 -280.026)" fill="#0058cb"/>
+      <path id="Pfad_7-9" data-name="Pfad 7" d="M916.093,407v7.344l23.092,15.224v-7.436Z" transform="translate(-895.64 -268.991)" fill="#0058cb"/>
+      <path id="Pfad_7-10" data-name="Pfad 7" d="M916.093,407v7.344l23.092,15.224v-7.436Z" transform="translate(-895.64 -257.956)" fill="#0058cb"/>
+      <path id="Pfad_7-11" data-name="Pfad 7" d="M916.093,407v7.344l23.092,15.224v-7.436Z" transform="translate(-895.64 -246.921)" fill="#0058cb"/>
+      <path id="Pfad_7-12" data-name="Pfad 7" d="M916.093,407v7.344l23.092,15.224v-7.436Z" transform="translate(-895.64 -235.886)" fill="#0058cb"/>
+      <path id="Pfad_7-13" data-name="Pfad 7" d="M974.687,455.659v0Z" transform="translate(-920.312 -212.467)" fill="#c9f2ff"/>
+      <path id="Pfad_6" data-name="Pfad 6" d="M997.538,407V510.092l-81.444,54.344V460.049Z" transform="translate(-834.649 -325.45)" fill="#0060b6"/>
+      <path id="Pfad_9" data-name="Pfad 9" d="M921.9,407v7.344l-5.8,3.871v-7.436Z" transform="translate(-771.181 -303.201)" fill="#c9f2ff"/>
+      <path id="Pfad_10" data-name="Pfad 10" d="M939.185,407v7.344l-23.092,15.224v-7.436Z" transform="translate(-799.112 -296.501)" fill="#a7feee"/>
+      <path id="Pfad_11" data-name="Pfad 11" d="M15.682,0c8.661,0,15.682,10.106,15.682,22.573S24.342,45.146,15.682,45.146,0,35.04,0,22.573,7.021,0,15.682,0Z" transform="matrix(0.899, 0.438, -0.438, 0.899, 122.385, 135.725)" fill="#012a4f"/>
+    </g>
+    <g id="pc1-2" data-name="pc1" transform="translate(805.299 210.093)">
+      <path id="Pfad_2-2" data-name="Pfad 2" d="M39.7,39.7,196.5,0,163.578,163.578,0,196.5Z" transform="translate(138.949) rotate(45)" fill="#4eedff"/>
+      <path id="Pfad_3-2" data-name="Pfad 3" d="M39.7,39.7,196.5,0,163.578,163.578,0,196.5Z" transform="translate(138.949 176.112) rotate(45)" fill="#00c2ff"/>
+      <path id="Pfad_4-2" data-name="Pfad 4" d="M916.093,407V582.654l138.769,92.595V497.387Z" transform="translate(-916.093 -268.051)" fill="#00c2ff"/>
+      <path id="Pfad_5-2" data-name="Pfad 5" d="M916.093,407V582.654l138.769,92.595V497.387Z" transform="translate(-916.093 -268.051)" fill="#00c2ff"/>
+      <path id="Pfad_7-14" data-name="Pfad 7" d="M916.093,407v12.513l9.885,6.6v-12.67Z" transform="translate(-899.375 -220.872)" fill="#c9f2ff"/>
+      <path id="Pfad_7-15" data-name="Pfad 7" d="M916.093,407v12.513l9.885,6.6v-12.67Z" transform="translate(-899.375 -202.07)" fill="#c9f2ff"/>
+      <path id="Pfad_7-16" data-name="Pfad 7" d="M916.093,407v12.513l9.885,6.6v-12.67Z" transform="translate(-899.375 -183.268)" fill="#c9f2ff"/>
+      <path id="Pfad_7-17" data-name="Pfad 7" d="M916.093,407v12.513l9.885,6.6v-12.67Z" transform="translate(-899.375 -164.466)" fill="#c9f2ff"/>
+      <path id="Pfad_7-18" data-name="Pfad 7" d="M916.093,407v12.513l9.885,6.6v-12.67Z" transform="translate(-899.375 -145.664)" fill="#c9f2ff"/>
+      <path id="Pfad_7-19" data-name="Pfad 7" d="M916.093,407v12.513l9.885,6.6v-12.67Z" transform="translate(-899.375 -126.862)" fill="#c9f2ff"/>
+      <path id="Pfad_7-20" data-name="Pfad 7" d="M916.093,407v12.513l39.345,25.939v-12.67Z" transform="translate(-881.245 -209.457)" fill="#0058cb"/>
+      <path id="Pfad_8-7" data-name="Pfad 8" d="M916.093,407v12.513L950.4,440.6v-12.67Z" transform="translate(-833.955 -180.012)" fill="#85feea"/>
+      <path id="Pfad_8-8" data-name="Pfad 8" d="M916.093,407v12.513L950.4,440.6v-12.67Z" transform="translate(-833.955 -161.274)" fill="#85feea"/>
+      <path id="Pfad_8-9" data-name="Pfad 8" d="M916.093,407v12.513L950.4,440.6v-12.67Z" transform="translate(-833.955 -142.537)" fill="#85feea"/>
+      <path id="Pfad_8-10" data-name="Pfad 8" d="M916.093,407v12.513L950.4,440.6v-12.67Z" transform="translate(-833.955 -123.8)" fill="#85feea"/>
+      <path id="Pfad_8-11" data-name="Pfad 8" d="M916.093,407v12.513L950.4,440.6v-12.67Z" transform="translate(-833.955 -105.062)" fill="#85feea"/>
+      <path id="Pfad_8-12" data-name="Pfad 8" d="M916.093,407v12.513L950.4,440.6v-12.67Z" transform="translate(-833.955 -86.325)" fill="#85feea"/>
+      <path id="Pfad_7-21" data-name="Pfad 7" d="M916.093,407v12.513l39.345,25.939v-12.67Z" transform="translate(-881.245 -190.655)" fill="#0058cb"/>
+      <path id="Pfad_7-22" data-name="Pfad 7" d="M916.093,407v12.513l39.345,25.939v-12.67Z" transform="translate(-881.245 -171.853)" fill="#0058cb"/>
+      <path id="Pfad_7-23" data-name="Pfad 7" d="M916.093,407v12.513l39.345,25.939v-12.67Z" transform="translate(-881.245 -153.051)" fill="#0058cb"/>
+      <path id="Pfad_7-24" data-name="Pfad 7" d="M916.093,407v12.513l39.345,25.939v-12.67Z" transform="translate(-881.245 -134.249)" fill="#0058cb"/>
+      <path id="Pfad_7-25" data-name="Pfad 7" d="M916.093,407v12.513l39.345,25.939v-12.67Z" transform="translate(-881.245 -115.447)" fill="#0058cb"/>
+      <path id="Pfad_7-26" data-name="Pfad 7" d="M974.687,462.884v0Z" transform="translate(-882.04 -48.52)" fill="#c9f2ff"/>
+      <path id="Pfad_6-2" data-name="Pfad 6" d="M1054.863,407V582.654L916.093,675.249V497.387Z" transform="translate(-777.324 -268.051)" fill="#0060b6"/>
+      <path id="Pfad_9-2" data-name="Pfad 9" d="M925.979,407v12.513l-9.885,6.6v-12.67Z" transform="translate(-669.184 -230.141)" fill="#c9f2ff"/>
+      <path id="Pfad_10-2" data-name="Pfad 10" d="M955.439,407v12.513l-39.345,25.939v-12.67Z" transform="translate(-716.774 -218.726)" fill="#a7feee"/>
+      <path id="Pfad_11-2" data-name="Pfad 11" d="M26.719,0C41.476,0,53.439,17.22,53.439,38.461S41.476,76.923,26.719,76.923,0,59.7,0,38.461,11.963,0,26.719,0Z" transform="matrix(0.899, 0.438, -0.438, 0.899, 208.527, 231.256)" fill="#012a4f"/>
+    </g>
+    <line id="Linie_1" data-name="Linie 1" x2="135.328" y2="86.202" transform="translate(1006.814 477.419)" fill="none" stroke="#01c2ff" stroke-linecap="round" stroke-width="4" stroke-dasharray="14 12"/>
+  </g>
+</svg>
