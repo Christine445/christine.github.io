@@ -90,7 +90,7 @@ a.color-link {
 }
 
 a.link-index {
-  color: #a3b9b8;
+  color: #0d5a57;
   text-decoration: none
 }
 
@@ -100,7 +100,7 @@ a.link-index:hover {
 }
 
 a .dontbite {
-  color: #a3b9b8;
+  color: #0d5a57;
   text-decoration: none;
   display: inline;
 }
@@ -121,6 +121,10 @@ a:hover .doI {
 /*     Navbar      */
 .nav-link {
   color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #0d5a57 !important;
 }
 
 .navbar {
@@ -193,9 +197,9 @@ p {
 }
 
 h1 {
-  color: #a3b9b8;
+  color: #0d5a57;
   font-family: 'Just Another Hand', cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 300;
   margin: 100px 0 10px 0;
 }
@@ -254,8 +258,8 @@ sup {
 }
 
 .Home {
-  padding-top: 6rem;
-  padding-bottom: 12rem;
+  padding-top: 8rem;
+  padding-bottom: 15rem;
 }
 
 /* h3 */

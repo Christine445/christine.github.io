@@ -274,6 +274,10 @@ p {
   color: #fff !important;
 }
 
+.nav-link:hover {
+  color: #346966 !important;
+}
+
 .image-brand {
   width: 30%;
 }
