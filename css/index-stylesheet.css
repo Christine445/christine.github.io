@@ -430,7 +430,7 @@ img:hover {
 
 .main h3 {
     color: #323232;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem; */
     text-align: left;
     opacity: 0.5;
 }
