@@ -20,8 +20,47 @@ body {
 
 .background-deco-hello {
   background-color: #E0EBE8;
+  color: #fff;
   position: relative;
-  padding-bottom: 100px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #679895;
+  background-size: cover;
+  background-position: 50% 50%
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  /* background: #000022; */
+  /* position: absolute; */
+  /* top: 48px;
+  left: 0;
+  width: 80px;
+  padding-bottom: 2px; */
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  /* margin-top: 5px;
+  margin-left: 5px; */
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
 }
 
 .container-fluid {
@@ -51,22 +90,17 @@ a.color-link {
 }
 
 a.link-index {
-  color: #4AB19A;
+  color: #a3b9b8;
   text-decoration: none
 }
 
 a.link-index:hover {
-  color: #58D6B9;
-  text-decoration: none;
-}
-
-a.link-drum {
-  color: #5C5C61;
+  color: #346966;
   text-decoration: none;
 }
 
 a .dontbite {
-  color: #4AB19A;
+  color: #a3b9b8;
   text-decoration: none;
   display: inline;
 }
@@ -80,7 +114,7 @@ a:hover .dontbite {
 }
 
 a:hover .doI {
-  color: #58D6B9;
+  color: #346966;
   display: inline;
 }
 
@@ -97,7 +131,7 @@ a:hover .doI {
   padding: 0.3% 12%;
   margin: 0;
   display: flex;
-  background-color: rgba(74, 177, 154, 1);
+  background-color: rgba(103, 152, 149, 1); /*rgba(74, 177, 154, 1);*/
   transition: transform .25s .1s ease-in-out;
   /* background-color: rgba(0, 0, 0, 0); */
 }
@@ -159,7 +193,7 @@ p {
 }
 
 h1 {
-  color: #4AB19A;
+  color: #a3b9b8;
   font-family: 'Just Another Hand', cursive;
   font-size: 3rem;
   font-weight: 300;
@@ -219,16 +253,16 @@ sup {
   margin-left: 0.5em;
 }
 
-/* Text */
 .Home {
-  padding-top: 0.5rem;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
 }
 
 /* h3 */
 #head-nav .container {
   color: #323232;
   padding-left: 0;
-  padding-top: 0px;
+  padding-top: 0;
   display: inline-flex;
 }
 
@@ -649,7 +683,7 @@ figure {
 
 /* Footer */
 .background-deco-footer {
-  background-color: #4AB19A;
+  background-color: #679895;
   padding: 20px 0 20px 0;
 }
 
@@ -795,6 +829,7 @@ figure {
   .work-thumbnail #video {
     display: none !important;
   }
+
   .R3_videos {
     display: block !important;
   }
