@@ -1,3 +1,4 @@
+$(document).ready(function () {
 particlesJS("particles-js", {
   particles: {
     number: {
@@ -73,3 +74,4 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+});
