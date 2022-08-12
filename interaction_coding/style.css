@@ -89,11 +89,33 @@ a {
   cursor: pointer;
 }
 
-#plantlist .circle {
+#plantlist .circle-orange {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: orange;
+  margin-right: 10px;
+}
+
+#plantlist .circle-green {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-right: 10px;
+}
+
+#plantlist .circle-red {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: red;
+  margin-right: 10px;
+}
+
+#plantlist .text-container {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  height: 10px;
-  width: 10px;
 }
