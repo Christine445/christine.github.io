@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Foodiyo App/</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Pacifico&display=swap');
+    </style>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+    <div class="screen">
+        <div class="container-center-horizontal">
+            <!---------------
+
+        ##################################
+        ####### WELCOME SCREEN ###########
+        ################################## 
+
+        --------------->
+            <section id="welcome">
+                <div class="overlap-group1">
+                    <!-- background style -->
+                    <div class="overlap-group">
+                        <div class="ellipse-100"></div>
+                        <div class="ellipse-101"></div>
+                        <img class="img-salad-welcome" src="src/img/salad.png" />
+                        <div class="rectangle-78 border-20px-white-2"></div>
+                        <div class="rectangle-79 border-20px-white-2"></div>
+                        <img class="img-cucumber-welcome" src="src/img/cucumber_slices.png" />
+                    </div>
+                    <img class="logo" src="src/svg/logo.svg" alt="logo foodiyo app">
+                    <h1 class="title">FOODIYO</h1>
+                    <p class="text-1 inter-medium-white-16px">
+                        ...get cooking inspirations <br />with ingredients <br />you have at home!
+                    </p>
+                    <div class="button-green position-button-welcome" id="lets-start">
+                        <div class="button-green-text valign-text-middle">Let’s start!</div>
+                    </div>
+                </div>
+            </section>
+
+            <!---------------
+
+        ##################################
+        ######### SELECT DIET ############
+        ################################## 
+
+        --------------->
+
+            <section id="select-diet">
+                <div class="overlap-group8">
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+                    <img class="progress" src="src/svg/progress0.svg" />
+                    <div class="headline">
+                        <span class="span0">What’s your </span><span class="span1">diet?</span>
+                    </div>
+                    <div class="overlap-group4">
+                        <img class="info-diet-options" alt="information about diet options" src="src/svg/info.svg" />
+                    </div>
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+
+                    <p class="text-1 inter-medium-white-16px">
+                        no matter which diet option you choose - we will find awesome recipes for you!
+                    </p>
+
+                    <div class="diet-options">
+                        <!-- vegeterian -->
+                        <div class="option-container1">
+
+                            <div class="vegeterian-option " onclick="selectdietveggie()">
+                                <div id="vegeterian-option" class="ellipse-95 border-4px-green2---fdy-unselected">
+                                    <div class="overlap-group-diet-option">
+                                        <img id="vegeterian-option1" class="icon-diet2" src="src/svg/vegeterian.svg" />
+                                    </div>
+                                </div>
+                                <div class="diet-text inter-medium-white-14px">Vegeterian</div>
+                            </div>
+
+                            <!-- pesceterian -->
+                            <div class="pesceterian-option" onclick="selectdietpesceterian()">
+                                <div id="pesceterian-option" class="ellipse-95 border-4px-green2---fdy-unselected">
+                                    <div class="overlap-group-diet-option">
+                                        <img id="pesceterian-option1" class="icon-diet2" src="src/svg/pesceterian.svg" />
+                                    </div>
+                                </div>
+                                <div class="diet-text inter-medium-white-14px">Pesceterian</div>
+                            </div>
+                        </div>
+
+                        <!-- vegan -->
+                        <div class="option-container2">
+                            <div class="vegan-option" onclick="selectdietvegan()">
+                                <div id="vegan-option" class=" ellipse-95 border-4px-green2---fdy-unselected">
+                                    <div class="overlap-group-diet-option2">
+                                        <img id="vegan-option1" class="icon-diet " src="src/svg/vegan.svg " />
+                                    </div>
+                                </div>
+                                <div class="diet-text inter-medium-white-14px ">Vegan</div>
+                            </div>
+
+                            <!-- gluten-free option -->
+                            <div class="gluten-free-option" onclick="selectdietglutenfree()">
+                                <div id="gluten-free-option" class="ellipse-95 border-4px-green2---fdy-unselected">
+                                    <div class="overlap-group-diet-option ">
+                                        <img id="gluten-free-option1" class="icon-diet2 " src="src/svg/glutenfree.svg " />
+                                    </div>
+                                </div>
+                                <div class="diet-text inter-medium-white-14px ">Gluten-free</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="button-pos">
+                        <!-- button "save diet settings " -->
+                        <div class="button-green button-position-save-diet" id="save-diet-settings">
+                            <div class="button-green-text valign-text-middle ">alright, save diet settings</div>
+                        </div>
+                        <!-- button "no special diet " -->
+                        <div class="button-green-outline " id="no-special-diet">
+                            <div class="button-green-outline-text valign-text-middle ">no special diet</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+            <!---------------
+
+        #######################################
+        ######### INFO SELECT DIET ############
+        ####################################### 
+
+        --------------->
+            <section id="info-diet-options">
+                <div class="overlap-group-diet">
+                    <div class="overlap-group-info-diet-option">
+                        <div class="info-diet-option-container border-5px-green2---fdy">
+
+                            <div class="flex-row-info">
+                                <div class="which-diet-option inter-medium-white-20px">Which diet option?</div>
+                                <a href="javascript:HideOverlay('close', 'animate-disappear');">
+                                    <div class="close" id="close-info-diet-options">
+                                        <div class="overlap-group-close">
+                                            <img class="cancel" src="src/svg/close.svg" />
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Vegeterian Option -->
+                                <div class="component-1">
+                                    <div class="option">
+                                        <div class="diet-option inter-normal-white-12px">Vegeterian</div>
+                                        <div class="overlap-group border-4px-green2---fdy">
+                                            <img class="vegeterian" alt="vegeterian diet icon" src="src/svg/vegeterian.svg" />
+                                        </div>
+                                    </div>
+                                    <p class="text-diet-option inter-normal-white-12px">
+                                        A person who does not eat meat or fish, and sometimes other animal products.
+                                    </p>
+                                </div>
+
+                                <!-- Vegan Option -->
+                                <div class="component-2">
+                                    <div class="option">
+                                        <div class="diet-option inter-normal-white-12px">Vegan</div>
+                                        <div class="overlap-group border-4px-green2---fdy">
+                                            <img class="vegan" alt="vegan diet icon" src="src/svg/vegan.svg" />
+                                        </div>
+                                    </div>
+                                    <p class="text-diet-option inter-normal-white-12px">
+                                        A vegan diet contains only plants (such as vegetables, grains, nuts and fruits) and foods made from plants.
+                                    </p>
+                                </div>
+
+                                <!-- Pesceterian Option -->
+                                <div class="component-3">
+                                    <div class="option">
+                                        <div class="diet-option inter-normal-white-12px">Pesceterian</div>
+                                        <div class="overlap-group border-4px-green2---fdy">
+                                            <img class="pesceterian" alt="pesceterian diet icon" src="src/svg/pesceterian.svg" />
+                                        </div>
+                                    </div>
+                                    <p class="text-diet-option inter-normal-white-12px">
+                                        Pesceterians eat fish and seafood, but no other animal products, such as meat.
+                                    </p>
+                                </div>
+
+                                <!-- Gluten-free Option -->
+                                <div class="component-4">
+                                    <div class="option">
+                                        <div class="diet-option inter-normal-white-12px">Gluten-free</div>
+                                        <div class="overlap-group border-4px-green2---fdy">
+                                            <img class="gluten-free" alt="gluten free diet icon" src="src/svg/glutenfree.svg" />
+                                        </div>
+                                    </div>
+                                    <p class="text-diet-option inter-normal-white-12px">
+                                        Diet that excludes foods containing gluten. Gluten is a protein found in wheat, barley, rye and triticale (a cross between wheat and rye).
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--------------- 
+
+            ##################################
+            ####### SELECT PANTRY ############
+            ################################## 
+            
+            --------------->
+            <section id="select-pantry">
+                <div class="overlap-group9">
+                    <img class="progress" src="src/svg/progress1-0.svg" />
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <img class="search" alt="search" src="src/svg/search.svg" />
+
+                    <div class="headline">
+                        <span class="span0">What’s in your </span><span class="span1">pantry?</span>
+                    </div>
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+                    <p class="text-2 inter-medium-white-16px">
+                        get recipe inspirations based on ingredients you have at home
+                    </p>
+
+                    <!-- pantry categories -->
+                    <div class="categories">
+                        <div class="container-padding">
+                            <div class="category-container" id="cereals">
+                                <span class="text-3 inter-medium-white-16px">vegetables</span>
+                                <img class="food-icon" alt="vegetables img" src="src/img/vegetables.png" />
+                                <img class="open" id="open-ingredients" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">diaries</span>
+                                <img class="food-icon" alt="diaries img" src="src/img//dairies.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">fish and seafood</span>
+                                <img class="food-icon" alt="fish and seafood img" src="src/img/fish_seafood.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">fruits</span>
+                                <img class="food-icon" alt="fruits img" src="src/img/fruits.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">meat</span>
+                                <img class="food-icon" alt="meat img" src="src/img/meat.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">pasta</span>
+                                <img class="food-icon" alt="pasta img" src="src/img/pasta.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">cereals and grains</span>
+                                <img class="food-icon" alt="cereals and grains img" src="src/img//cereals_grains.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container1">
+                                <span class="text-4">searching for another ingredient?</span>
+                                <img class="open-right" alt="click to see more" src="src/svg/open_icon_right.svg" onlick="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- button "save & get recipe suggestions " -->
+                    <div class="button-green-pos " id="save-get-recipe-suggestions">
+                        <div class="button-green-text valign-text-middle ">save & get recipe suggestions</div>
+                    </div>
+                    <!-- button "select later " -->
+                    <div class="button-without-outline " id="select-later">
+                        <div class="button-without-outline-text valign-text-middle ">select later</div>
+                    </div>
+
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+
+            </section>
+
+            <!--------------- 
+
+            ############################################
+            ####### PANTRY SELECTED  CEREALS  ##########
+            ############################################ 
+            
+            --------------->
+            <section id="pantry-selection-cereals">
+                <div class="overlap-group9">
+                    <img class="progress" src="src/svg/progress1-0.svg" />
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <img class="search" alt="search" src="src/svg/search.svg" />
+
+                    <div class="headline">
+                        <span class="span0">What’s in your </span><span class="span1">pantry?</span>
+                    </div>
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+                    <p class="text-2 inter-medium-white-16px">
+                        get recipe inspirations based on ingredients you have at home
+                    </p>
+
+                    <!-- pantry categories -->
+                    <div class="categories">
+                        <div class="container-padding">
+                            <div class="category-container-selected">
+                                <span class="text-3-if-selected inter-medium-white-16px">vegetables</span>
+                                <img class="food-icon-if-selected" alt="vegetables img" src="src/img/vegetables.png" />
+
+                                <div class="ingredient-container">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option">pumpkin</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option1">onion</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option2">garlic</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option6">salad</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">red pepper</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">tomato</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">carrot</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">chili</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">cucumber</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">zucchini</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">green pepper</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">yellow pepper</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">red onion</span>
+                                    </div>
+                                </div>
+
+                                <img class="close" id="close-ingredients" alt="close" src="src/svg/close_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">diaries</span>
+                                <img class="food-icon" alt="diaries img" src="src/img//dairies.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">fish and seafood</span>
+                                <img class="food-icon" alt="fish and seafood img" src="src/img/fish_seafood.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">fruits</span>
+                                <img class="food-icon" alt="fruits img" src="src/img/fruits.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">meat</span>
+                                <img class="food-icon" alt="meat img" src="src/img/meat.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">pasta</span>
+                                <img class="food-icon" alt="pasta img" src="src/img/pasta.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">cereals and grains</span>
+                                <img class="food-icon" alt="cereals and grains img" src="src/img/cereals_grains.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container1">
+                                <span class="text-4">searching for another ingredient?</span>
+                                <img class="open-right" alt="click to see more" src="src/svg/open_icon_right.svg" onlick="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- button "save & get recipe suggestions " -->
+                    <div class="button-green-pos " id="save-get-suggestions">
+                        <div class="button-green-text valign-text-middle ">safe & get recipe suggestions</div>
+                    </div>
+                    <!-- button "select later " -->
+                    <div class="button-without-outline " id="select-ingr-later">
+                        <div class="button-without-outline-text valign-text-middle ">select later</div>
+                    </div>
+
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+
+
+
+            </section>
+
+            <!-----------------
+
+##################################
+########## MAIN SCREEN ###########
+################################## 
+
+--------------->
+            <section id="main">
+                <div class="overlap-group9">
+
+                    <!---------------- dinner section --------------------->
+
+                    <!-- tab bar: breakfast - lunch - dinner -->
+                    <div id="dinner-section">
+
+                        <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                        <span class="text-7-1 inter-medium-white-16px">Good evening! <span class="inter-medium-white-20px">Time for <span class="text-10">Dinner!</span></span>
+                        </span>
+                        <img class="search" alt="search" src="src/svg/search.svg" />
+
+                        <!-- background style -->
+                        <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                        <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                        <div class="tab-bar-time">
+                            <div class="overlap-group-time">
+                                <!-- <div class="bg-white-move"></div> -->
+
+                                <div class="breakfast">
+                                    <div class="breakfast-bg">
+                                        <div class="breakfast-text-deselected">BREAKFAST</div>
+                                    </div>
+                                </div>
+                                <div class="lunch">
+                                    <div class="lunch-bg"></div>
+                                    <div class="lunch-text-deselected">LUNCH</div>
+                                </div>
+                                <div class="dinner">
+                                    <div class="bg-white-move"></div>
+                                    <div class="dinner-text-selected">DINNER</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- dish categories -->
+                        <div class="categories-dishes-main">
+
+                            <!-- dish of the week -->
+                            <div class="dish-of-the-week-rect">
+                                <div class="text-dish-of-week">
+                                    <div class="text-12"><span>DISH OF THE WEEK</span></div>
+                                    <div class="text-13"><span>green beans with salmon</span></div>
+                                </div>
+                                <!-- recipe data -->
+                                <div class="data-dow">
+                                    <div class="data-info-dow">
+                                        <div class="likes-dow">
+                                            <img class="likes-icon-dow" alt="like icon" src="src/svg/heart_small.svg" />
+                                            <div class="text-likes-dow">- 245</div>
+                                        </div>
+                                        <div class="time-dow">
+                                            <img class="time-icon-dow" alt="time icon" src="src/svg/time.svg" />
+                                            <div class="text-time-dow">- 45 min.</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="button-view-recipe"><span class="text-14 inter-medium-white-14px">view recipe</span></div>
+                                <img class="pic-dish-week" alt="picture of dish of the week" src="src/img/dish_of_the_week.png" />
+                            </div>
+
+
+                            <div class="container-dishes">
+                                <div class="using-dish">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">pumpkin</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field" id="see-recipe">
+                                                <img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Pumpkin soup</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" onclick="saveInCookbook()" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/baked_pumpkin.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Baked pumpkin</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like " alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/pumpkin_couscous.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Couscous</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like " alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-dishes">
+                                <div class="using-dish1">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">salad</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Salad bread</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/mixed_salad.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Mixed salad</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/veggie_couscous.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Veggie couscous</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- do you have? -->
+                            <div class="do-you-have-rect">
+                                <div class="text-15"><span class="inter-fontweight500-white-16px">Do you have?</span></div>
+                                <div class="ingredient-container-main">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option4">butter</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option3">cream</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option5">eggs</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">pasta</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">breakfast cereal</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">risotto rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">heavy cream</span>
+                                    </div>
+                                </div>
+                                <div class="button-add-to-pantry" id="add-pantry"><span class="text-14 inter-medium-white-14px">add to my pantry</span></div>
+                                <div class="invisible" id="pantry-added"><img alt="checkbox" src="src/svg/Checkbox.svg"><span class="text-14 inter-medium-white-14px">added to your pantry</span></div>
+                            </div>
+
+                            <div class="container-dishes">
+                                <div class="using-dish2">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">garlic</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic1" alt="picture of dish" src="src/img/geroestetes-knoblauchbrot.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Garlic bread</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/spaghetti alio olio.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Spaghetti</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic1" alt="picture of dish" src="src/img/garlic-vegetables.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Baked veggies</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="loading" alt="load more recipes" src="src/gif/animation_loading.gif" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------- lunch section --------------------->
+
+                    <!-- tab bar: breakfast - lunch - dinner -->
+                    <div id="lunch-section">
+
+                        <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                        <span class="text-7-1 inter-medium-white-16px">Hey, what's up? <span class="inter-medium-white-20px">Time for <span class="text-10">Lunch!</span></span>
+                        </span>
+                        <img class="search" alt="search" src="src/svg/search.svg" />
+
+                        <!-- background style -->
+                        <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                        <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                        <div class="tab-bar-time">
+                            <div class="overlap-group-time">
+                                <!-- <div class="bg-white-move"></div> -->
+
+                                <div class="breakfast">
+                                    <div class="breakfast-bg">
+                                        <div class="breakfast-text-deselected">BREAKFAST</div>
+                                    </div>
+                                </div>
+                                <div class="lunch">
+                                    <div class="bg-white-move"></div>
+                                    <div class="lunch-text-selected">LUNCH</div>
+                                </div>
+                                <div class="dinner">
+                                    <div class="dinner-bg"></div>
+                                    <div class="dinner-text-deselected">DINNER</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="categories-dishes-main">
+
+                            <!-- dish of the week -->
+                            <div class="dish-of-the-week-rect">
+                                <div class="text-dish-of-week">
+                                    <div class="text-12"><span>DISH OF THE WEEK</span></div>
+                                    <div class="text-13"><span>green beans with salmon</span></div>
+                                </div>
+                                <!-- recipe data -->
+                                <div class="data-dow">
+                                    <div class="data-info-dow">
+                                        <div class="likes-dow">
+                                            <img class="likes-icon-dow" alt="like icon" src="src/svg/heart_small.svg" />
+                                            <div class="text-likes-dow">- 245</div>
+                                        </div>
+                                        <div class="time-dow">
+                                            <img class="time-icon-dow" alt="time icon" src="src/svg/time.svg" />
+                                            <div class="text-time-dow">- 45 min.</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="button-view-recipe"><span class="text-14 inter-medium-white-14px">view recipe</span></div>
+                                <img class="pic-dish-week" alt="picture of dish of the week" src="src/img/dish_of_the_week.png" />
+                            </div>
+
+
+
+                            <div class="container-dishes">
+                                <div class="using-dish">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">salad</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Salad bread</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/mixed_salad.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Mixed salad</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/veggie_couscous.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Couscous</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-dishes">
+                                <div class="using-dish1">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">pumpkin</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field" id="see-recipe1">
+                                                <img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Pumpkin soup</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" onclick="saveInCookbook()" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/baked_pumpkin.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Baked pumpkin</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/pumpkin_couscous.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Couscous</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- do you have? -->
+                            <div class="do-you-have-rect">
+                                <div class="text-15"><span class="inter-fontweight500-white-16px">Do you have?</span></div>
+                                <div class="ingredient-container-main">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option4">butter</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option3">cream</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option5">eggs</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">pasta</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">breakfast cereal</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">risotto rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">heavy cream</span>
+                                    </div>
+                                </div>
+                                <div class="button-add-to-pantry"><span class="text-14 inter-medium-white-14px">add to my pantry</span></div>
+                                <div class="invisible"><img alt="checkbox" src="src/svg/Checkbox.svg"><span class="text-14 inter-medium-white-14px">added to your pantry</span></div>
+                            </div>
+
+                            <div class="container-dishes">
+                                <div class="using-dish2">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">garlic</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic1" alt="picture of dish" src="src/img/geroestetes-knoblauchbrot.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Garlic bread</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/spaghetti alio olio.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Spaghetti</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic1" alt="picture of dish" src="src/img/garlic-vegetables.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Garlic veggies</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="loading" alt="load more recipes" src="src/gif/animation_loading.gif" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------- breakfast section --------------------->
+
+                    <!-- tab bar: breakfast - lunch - dinner -->
+                    <div id="breakfast-section">
+
+                        <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                        <span class="text-7-11 inter-medium-white-16px">Good morning! <span class="inter-medium-white-20px text-inline">Time for <span class="text-10">Breakfast!</span></span>
+                        </span>
+                        <img class="search" alt="search" src="src/svg/search.svg" />
+
+                        <!-- background style -->
+                        <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                        <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                        <div class="tab-bar-time">
+                            <div class="overlap-group-time">
+                                <!-- <div class="bg-white-move"></div> -->
+
+                                <div class="breakfast">
+                                    <div class="bg-white-move">
+                                        <div class="breakfast-text-selected">BREAKFAST</div>
+                                    </div>
+                                </div>
+                                <div class="lunch">
+                                    <div class="lunch-bg"></div>
+                                    <div class="lunch-text-deselected">LUNCH</div>
+                                </div>
+                                <div class="dinner">
+                                    <div class="dinner-bg"></div>
+                                    <div class="dinner-text-deselected">DINNER</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="categories-dishes-main">
+
+                            <!-- dish of the week -->
+                            <div class="dish-of-the-week-rect">
+                                <div class="text-dish-of-week">
+                                    <div class="text-12"><span>DISH OF THE WEEK</span></div>
+                                    <div class="text-13"><span>green beans with salmon</span></div>
+                                </div>
+                                <!-- recipe data -->
+                                <div class="data-dow">
+                                    <div class="data-info-dow">
+                                        <div class="likes-dow">
+                                            <img class="likes-icon-dow" alt="like icon" src="src/svg/heart_small.svg" />
+                                            <div class="text-likes-dow">- 245</div>
+                                        </div>
+                                        <div class="time-dow">
+                                            <img class="time-icon-dow" alt="time icon" src="src/svg/time.svg" />
+                                            <div class="text-time-dow">- 45 min.</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="button-view-recipe"><span class="text-14 inter-medium-white-14px">view recipe</span></div>
+                                <img class="pic-dish-week" alt="picture of dish of the week" src="src/img/dish_of_the_week.png" />
+                            </div>
+
+
+                            <div class="container-dishes">
+                                <div class="using-dish">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">garlic</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic1" alt="picture of dish" src="src/img/geroestetes-knoblauchbrot.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Garlic bread</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/spaghetti alio olio.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Spaghetti</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic1" alt="picture of dish" src="src/img/garlic-vegetables.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Garlic veggies</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="loading" alt="load more recipes" src="src/gif/animation_loading.gif" />
+                            </div>
+
+                            <div class="container-dishes">
+                                <div class="using-dish1">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">salad</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Salad bread</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/mixed_salad.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Mixed salad</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/veggie_couscous.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Couscous</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- do you have? -->
+                            <div class="do-you-have-rect">
+                                <div class="text-15"><span class="inter-fontweight500-white-16px">Do you have?</span></div>
+                                <div class="ingredient-container-main">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option4">butter</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option3">cream</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options ingr-option5">eggs</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">pasta</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">breakfast cereal</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">risotto rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">heavy cream</span>
+                                    </div>
+                                </div>
+                                <div class="button-add-to-pantry"><span class="text-14 inter-medium-white-14px">add to my pantry</span></div>
+                                <div class="invisible"><img alt="checkbox" src="src/svg/Checkbox.svg"><span class="text-14 inter-medium-white-14px">added to your pantry</span></div>
+                            </div>
+
+                            <div class="container-dishes">
+                                <div class="using-dish2">
+                                    <span class="inter-fontweight500-white-16px text-8">Using your <span class="text-11">pumpkin</span></span>
+                                    <div class="dish-suggestion-container-main">
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field" id="see-recipe2">
+                                                <img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Pumpkin soup</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" onclick="saveInCookbook()" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/baked_pumpkin.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Baked pumpkin</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                        <div class="dish-suggestions">
+                                            <div class="dish-field">
+                                                <img class="dish-pic2" alt="picture of dish" src="src/img/pumpkin_couscous.png" />
+                                                <div class="text-dish-container">
+                                                    <span class="inter-normal-white-12px">Pumpkin couscous</span>
+                                                </div>
+                                            </div>
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home" id="go-to-home3">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_selected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook" id="go-to-cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry" id="go-to-pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_deselected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile" id="go-to-profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+            <!-----------------
+
+##################################
+############ cookbook ############
+################################## 
+
+--------------->
+            <section id="cookbook">
+                <div class="overlap-group9">
+
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <span class="text-7 inter-medium-white-16px">Favorite Recipes <span class="inter-medium-white-20px">Your Cookbook</span></span>
+                    <img class="search" alt="search" src="src/svg/search.svg" />
+
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                    <!-- dish categories -->
+                    <div class="categories-dishes">
+                        <div class="container-dishes">
+                            <div class="rect-dish">
+                                <img class="favorite-button" alt="favorite" src="src/svg/heart_medium_filled.svg" />
+                                <span class="inter-fontweight500-white-16px text-8">breakfast recipes</span>
+                                <div class="dish-suggestion-container">
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/breakfast.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Eggs & sausages</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/breakfast.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Eggs & sausages</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/breakfast.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Eggs & sausages</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-dishes">
+                            <div class="rect-dish1">
+                                <img class="favorite-button" alt="favorite" src="src/svg/heart_medium_filled.svg" />
+                                <span class="inter-fontweight500-white-16px text-8">lunch recipes</span>
+                                <div class="dish-suggestion-container">
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field" id="open-recipe">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Pumpkin soup</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Pumpkin soup</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Pumpkin soup</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-dishes">
+                            <div class="rect-dish2">
+                                <img class="favorite-button" alt="favorite" src="src/svg/heart_medium_filled.svg" />
+                                <span class="inter-fontweight500-white-16px text-8">dinner recipes</span>
+                                <div class="dish-suggestion-container" id="save-recipes-here">
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Salad bread</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Salad bread</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                    <div class="dish-suggestions">
+                                        <div class="dish-field">
+                                            <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
+                                            <div class="text-dish-container">
+                                                <span class="inter-normal-white-12px">Salad bread</span>
+                                            </div>
+                                        </div>
+                                        <img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_deselected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_selected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_deselected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+            <!-----------------
+
+##############################################
+############ pantry green tab bar ############
+############################################## 
+
+--------------->
+            <section id="pantry-bar">
+                <div class="overlap-group9">
+
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <span class="text-5 inter-medium-white-16px">Let's check what's in <span class="inter-medium-white-20px">your pantry!</span></span>
+                    <img class="search" alt="search" src="src/svg/search.svg" />
+
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                    <!-- pantry categories -->
+                    <div class="categories-pantry">
+                        <div class="container-padding1">
+                            <div class="category-container-selected-pantry">
+                                <span class="text-3-if-selected inter-medium-white-16px">vegetables</span>
+                                <img class="food-icon-if-selected" alt="vegetables img" src="src/img/vegetables.png" />
+
+                                <div class="ingredient-container-pantry" id="ingr-container1">
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option ingr-pantry">pumpkin</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option1 ingr-pantry1">onion</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option2 ingr-pantry2">garlic</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option6 ingr-pantry6">salad</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingredient-options-white ingr-option20 ingr-pantry20" id="optionNew"></span>
+                                    </div>
+                                </div>
+
+                                <img class="open1" id="open-ingredient-options" alt="click to see more" src="src/svg/close_icon.svg" onlick="" />
+                            </div>
+                        </div>
+
+                        <div class="container-padding1">
+                            <div class="category-container" id="diaries">
+                                <span class="text-3 inter-medium-white-16px" id="text-closed">diaries</span>
+                                <img class="food-icon" id="food-icon-closed" alt="diaries img" src="src/img/dairies.png" />
+
+                                <div class="ingredient-container-pantry">
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option3 ingr-pantry3">cream</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option4 ingr-pantry4">butter</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="invisible ingr-option5 ingr-pantry5">eggs</span>
+                                    </div>
+                                </div>
+
+                                <img class="open" id="open-diaries" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+
+
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">fish and seafood</span>
+                                <img class="food-icon" alt="fish and seafood img" src="src/img/fish_seafood.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">fruits</span>
+                                <img class="food-icon" alt="fruits img" src="src/img/fruits.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">meat</span>
+                                <img class="food-icon" alt="meat img" src="src/img/meat.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">pasta</span>
+                                <img class="food-icon" alt="pasta img" src="src/img/pasta.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+                        <div class="container-padding">
+                            <div class="category-container">
+                                <span class="text-3 inter-medium-white-16px">cereals and grains</span>
+                                <img class="food-icon" alt="cereals and grains img" src="src/img//cereals_grains.png" />
+                                <img class="open" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--button-->
+                    <div class="two-buttons-pantry">
+                        <div class="button-green-pantry " id="save-update-recipes2">
+                            <div class="button-white-text valign-text-middle ">save & update recipes</div>
+                        </div>
+                        <div class="plus-button-ingr" id="add-ingr-with-plus-button">
+                            <div class="button-white-text1 valign-text-middle">+</div>
+                        </div>
+                    </div>
+
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_deselected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_selected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+            <!-----------------
+
+##############################################
+########## pantry cereals tab bar ############
+############################################## 
+
+--------------->
+            <section id="pantry-bar-cereals">
+                <div class="overlap-group9">
+
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <span class="text-5 inter-medium-white-16px">Let's check what's in <span class="inter-medium-white-20px">your pantry!</span></span>
+                    <img class="search" alt="search" src="src/svg/search.svg" />
+
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                    <!-- pantry categories -->
+                    <div class="categories-pantry">
+                        <div class="container-padding1">
+                            <div class="category-container-selected-pantry2">
+                                <span class="text-3-if-selected inter-medium-white-16px">cereals and grains</span>
+                                <img class="food-icon-if-selected" alt="cereals and grains img" src="src/img/cereals_grains.png" />
+
+                                <div class="ingredient-container-pantry2">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">rolled oats</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">quinoa</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">risotto</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">basmati rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">breakfast cereal</span>
+                                    </div>
+
+                                    <div class="more-ingredients">
+                                        <span class="text-6">...want to add more ingredients?</span>
+                                    </div>
+
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">risotto rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">couscous</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">wild rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">polenta</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">jasmine rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">grünkern</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">paella rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">aramanth</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">bulgur</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">brown rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">quick rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">langkorn rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">chocolate cereals</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">sweet cereals</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">cereals mix</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">healthy cereals</span>
+                                    </div>
+                                </div>
+
+                                <img class="close2" id="close-ingredient-options" alt="close" src="src/svg/close_icon.svg" onlick="" />
+                            </div>
+                        </div>
+
+                        <div class="container-padding1">
+                            <div class="category-container-selected-pantry">
+                                <span class="text-3-if-selected inter-medium-white-16px">diaries</span>
+                                <img class="food-icon-if-selected" alt="diaries img" src="src/img/dairies.png" />
+
+                                <div class="ingredient-container-pantry">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">rolled oats</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">quinoa</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">risotto</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">basmati rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">breakfast cereal</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">risotto rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">couscous</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">wild rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">polenta</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">jasmine rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">grünkern</span>
+                                    </div>
+                                </div>
+
+                                <img class="open1" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+
+                        <div class="container-padding1">
+                            <div class="category-container-selected-pantry">
+                                <span class="text-3-if-selected inter-medium-white-16px">fish and seafood</span>
+                                <img class="food-icon-if-selected" alt="fish and seafood img" src="src/img/fish_seafood.png" />
+
+                                <div class="ingredient-container-pantry">
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">rolled oats</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">quinoa</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">risotto</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">basmati rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">breakfast cereal</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options">risotto rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">couscous</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">wild rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">polenta</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">jasmine rice</span>
+                                    </div>
+                                    <div class="ingredient-padding">
+                                        <span class="ingredient-options-white">grünkern</span>
+                                    </div>
+                                </div>
+
+                                <img class="open1" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
+                            </div>
+                        </div>
+
+                        <div class="container-padding1">
+                            <div class="category-container1">
+                                <span class="text-4">suggest ingredient</span>
+                                <img class="open-right" alt="click to see more" src="src/svg/open_icon_right.svg" onlick="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--button-->
+                    <div class="button-green-pantry " onclick=" ">
+                        <div class="button-green-text valign-text-middle " id="save-update-recipes">save & update recipes</div>
+                    </div>
+
+
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_deselected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_selected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+            <!-----------------
+
+##################################
+######### USER PROFILE ###########
+################################## 
+
+---------------->
+            <section id="user-profile">
+                <div class="overlap-group9">
+
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <span class="text-7 inter-medium-white-16px">Settings and More <span class="inter-medium-white-20px">Your Profile</span></span>
+                    <img class="settings" alt="settings" src="src/svg/settings.svg" />
+
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                    <!-- user profile -->
+                    <div class="user-profile">
+                        <img class="user-icon" alt="picture of the user" src="src/svg/user_picture.svg" />
+                        <img class="camera" alt="change profile picture" src="src/svg/change_pic_icon.svg" />
+                        <span class="inter-medium-white-16px username">Username</span>
+                        <img class="open-side" alt="click to enter user name" src="src/svg/open_icon_right_light_green.svg" />
+                    </div>
+                    <div class="presettings">
+                        <div class="container-settings">
+                            <div class="options-container">
+                                <div class="options-padding">
+                                    <div class="options-field">
+                                        <img id="selected-diet-option" class="option-pic" alt="diet options" src="src/svg/no_diet_option.png" />
+                                        <div class="text-option-container">
+                                            <span class="inter-medium-white-9px">Diet option</span>
+                                        </div>
+                                    </div>
+                                    <img class="info-button-circle" alt="information button" src="src/svg/info_circle.svg" />
+                                </div>
+                                <div class="options-padding" id="open-pantry-storage">
+                                    <div class="options-field">
+                                        <img class="option-pic" alt="pantry options" src="src/svg/pantry_storage_no.png" />
+                                        <div class="text-option-container">
+                                            <span class="inter-medium-white-9px">Pantry storage</span>
+                                        </div>
+                                    </div>
+                                    <img class="info-button-circle" alt="information button" src="src/svg/info_circle.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="button-yellow " id="instagram-link">
+                        <img class="button-icon" alt="instagram logo" src="src/svg/instagram.svg" />
+                        <span class="button-profile-text valign-text-middle ">Follow us on Instagram</span>
+                        <img class="open-side-gray" alt="click to open" src="src/svg/open_icon_right.svg" />
+                    </div>
+                    <div class="button-light-green ">
+                        <img class="button-icon" alt="star" src="src/svg/rate_app.svg" />
+                        <span class="button-profile-text valign-text-middle ">Rate Foodiyo App</span>
+                        <img class="open-side-gray" alt="click to open" src="src/svg/open_icon_right.svg" />
+                    </div>
+                    <div class="button-white ">
+                        <img class="button-icon1" alt="information" src="src/svg/info_black.svg" />
+                        <span class="button-profile-text valign-text-middle ">Help & support</span>
+                        <img class="open-side-gray" alt="click to open" src="src/svg/open_icon_right.svg" />
+                    </div>
+
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_deselected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_deselected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon-selected" alt="foodiyo profile" src="src/svg/user_profile_selected.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+            <!-----------------
+
+##################################
+######## RECIPE COOKING ###########
+################################## 
+
+---------------->
+            <section id="recipe-cooking">
+                <div class="overlap-group-recipe-cooking">
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+                    <img class="img-recipe" alt="pumpkin soup recipe" src="src/img/pumpkin_soup_recipe/img_recipe.png" />
+                    <img class="play-icon recipe-video-play" src="src/svg/play_icon.svg" />
+                    <div class="overlap-group-back">
+                        <img class="back-icon" id="back-to-main-from-cooking" src="src/svg/back_arrow.svg" />
+                    </div>
+                    <div class="like-option like" onclick="saveInCookbook()">
+                        <img class="like-icon" id="like-big-cooking" src="src/svg/heart_circle_big_unselected.svg" />
+                    </div>
+
+                    <!-- recipe data -->
+                    <div class="data">
+                        <div class="name-recipe inter-fontweight500-white-16px">PUMPKIN SOUP</div>
+                        <div class="data-info">
+                            <div class="likes">
+                                <img class="likes-icon" alt="like icon" src="src/svg/heart_small.svg" />
+                                <div class="text-likes inter-medium-white-14px">- 245</div>
+                            </div>
+                            <div class="time">
+                                <img class="time-icon" alt="time icon" src="src/svg/time.svg" />
+                                <div class="text-time inter-medium-white-14px">- 30 min.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- tab bar: ingredients & let's cook -->
+                    <div class="tab-bar-ingredients-cook">
+                        <div class="overlap-group-ingredients-cook">
+                            <!-- <div class="bg-white-move"></div> -->
+
+                            <div class="ingredients" id="tab-bar-ingredients">
+                                <div class="">
+                                    <div class="ingredients-text-deselected">INGREDIENTS</div>
+                                </div>
+                            </div>
+                            <div class="lets-cook" id="tab-bar-lets-cook">
+                                <div class="bg-white-move2"></div>
+                                <div class="lets-cook-text-selected">LET’S COOK</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-cooking">
+                        <div class="cooking-step">
+                            <div class="group-cooking-step">
+                                <img class="cooking-step-img " alt="cut the pumpkin " src="src/img/pumpkin_soup_recipe/pumpkinsoup_step1.png " />
+
+                                <div class="number-overlap-group">
+                                    <div class="number valign-text-middle-steps">1</div>
+                                </div>
+
+                            </div>
+                            <p class="cooking-steps-text inter-medium-white-14px">
+                                Cut the pumpkin. Cut the skin off and scrape seeds out. Cut into chunks.
+                            </p>
+                        </div>
+                        <div class="cooking-step">
+                            <div class="group-cooking-step">
+                                <img class="cooking-step-img " alt="cook the pumpkin " src="src/img/pumpkin_soup_recipe/pumpkinsoup_step2.png " />
+
+                                <div class="number-overlap-group">
+                                    <div class="number valign-text-middle-steps">2</div>
+                                </div>
+
+                            </div>
+                            <p class="cooking-steps-text inter-medium-white-14px">
+                                Place the pumpkin, onion, garlic, broth and water in a pot — liquid won't quite cover all the pumpkin. Bring to a boil, uncovered, then reduce heat and let simmer rapidly until pumpkin is tender (check with butter knife).
+                            </p>
+                        </div>
+                        <div class="cooking-step">
+                            <div class="group-cooking-step">
+                                <img class="cooking-step-img " alt="blender the pumpkin " src="src/img/pumpkin_soup_recipe/pumpkinsoup_step3.png " />
+
+                                <div class="number-overlap-group">
+                                    <div class="number valign-text-middle-steps">3</div>
+                                </div>
+
+                            </div>
+                            <p class="cooking-steps-text inter-medium-white-14px">
+                                Remove from heat and use a stick blender to blend until smooth.
+                            </p>
+                        </div>
+                        <div class="cooking-step">
+                            <div class="group-cooking-step">
+                                <img class="cooking-step-img " alt="serve pumpkin soup with bread" src="src/img/pumpkin_soup_recipe/pumpkinsoup_step4.png " />
+
+                                <div class="number-overlap-group">
+                                    <div class="number valign-text-middle-steps">4</div>
+                                </div>
+
+                            </div>
+                            <p class="cooking-steps-text inter-medium-white-14px">
+                                Season to taste with salt and pepper, stir through cream (never boil soup after adding soup, cream will split). Ladle soup into bowls, drizzle over a bit of cream, sprinkle with pepper and parsley if desired. Serve with crusty bread!
+                            </p>
+                        </div>
+                        <p class="enjoy">Enjoy!</p>
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_selected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_deselected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------
+
+#######################################
+######## RECIPE INGREDIENTS ###########
+####################################### 
+
+---------------->
+            <section id="recipe-ingredients">
+                <div class="overlap-group5">
+                    <!-- background style -->
+                    <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                    <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+                    <img class="img-recipe" alt="pumpkin soup recipe" src="src/img/pumpkin_soup_recipe/img_recipe.png" />
+                    <img class="play-icon recipe-video-play" src="src/svg/play_icon.svg" />
+                    <div class="overlap-group-back ">
+                        <img class="back-icon" id="back-to-main" src="src/svg/back_arrow.svg" />
+                    </div>
+                    <div class="like-option like" onclick="saveInCookbook()">
+                        <img class="like-icon" id="like-big-ingredients" src="src/svg/heart_circle_big_unselected.svg" />
+                    </div>
+
+                    <!-- recipe data -->
+                    <div class="data">
+                        <div class="name-recipe inter-fontweight500-white-16px">PUMPKIN SOUP</div>
+                        <div class="data-info">
+                            <div class="likes">
+                                <img class="likes-icon" alt="like icon" src="src/svg/heart_small.svg" />
+                                <div class="text-likes inter-medium-white-14px">- 245</div>
+                            </div>
+                            <div class="time">
+                                <img class="time-icon" alt="time icon" src="src/svg/time.svg" />
+                                <div class="text-time inter-medium-white-14px">- 30 min.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- tab bar: ingredients & let's cook -->
+                    <div class="tab-bar-ingredients-cook">
+                        <div class="overlap-group-ingredients-cook">
+
+                            <div class="ingredients" id="tab-bar-ingredients2">
+                                <div class="bg-white-move2">
+                                    <div class="ingredients-text-selected">INGREDIENTS</div>
+                                </div>
+                            </div>
+                            <div class="lets-cook" id="tab-bar-lets-cook2">
+                                <div class="lets-cook-bg"></div>
+                                <div class="lets-cook-text-deselected">LET’S COOK</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-content">
+                        <!-- SERVINGS -->
+                        <div class="servings inter-medium-white-18px">SERVINGS</div>
+
+                        <div class="no-of-servings">
+                            <div class="minus " id="decrement " onclick="decreaseServings()">
+                                <img class="amount-icon " alt="reduce number of servings " src="src/svg/minus.svg " />
+                            </div>
+                            <div id="counter" class="amount-of-servings">5</div>
+                            <div class="plus " id="increment " onclick="increaseServings()">
+                                <img class="amount-icon " alt="increase number of servings " src="src/svg/plus.svg " />
+                            </div>
+                        </div>
+
+                        <!-- WHAT YOU NEED -->
+                        <div class="info " id="info-ingredients">
+                            <img class="info-icon " alt="information " src="src/svg/info.svg " />
+                        </div>
+                        <div class="flex-row ">
+                            <div class="flex-col ">
+                                <div class="what-you-need inter-medium-white-18px ">WHAT YOU NEED
+                                </div>
+                                <div class="flex-row-1 ">
+                                    <div class="flex-col-1 ">
+                                        <div class="ingredient-a" onclick="deselectIngredient1() ">
+                                            <img class="ingredient-icon " id="ingredient-icon-a" alt="pumpkin " src="src/img/pumpkin_soup_recipe/pumpkin.png " />
+                                            <div class="ingredient-text " id="numb1">1 Hokkaido <br />Pumpkin</div>
+                                        </div>
+                                        <div class="ingredient-b " onclick=" ">
+                                            <img class="ingredient-icon " alt="cream " src="src/img/pumpkin_soup_recipe/cream.png " />
+                                            <div class="ingredient-text " id="numb2">1/2 Cream</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-2 ">
+                                        <div class="ingredient-a " onclick="deselectIngredient2() ">
+                                            <img class="ingredient-icon " id="ingredient-icon-a2" alt="onion " src="src/img/pumpkin_soup_recipe/onion.png " />
+                                            <div class="ingredient-text " id="numb3">1/2 sweet<br />Onion</div>
+                                        </div>
+                                        <div class="ingredient-b " onclick=" ">
+                                            <img class="ingredient-icon " alt="salt " src="src/img/pumpkin_soup_recipe/salt.png " />
+                                            <div class="ingredient-text ">Salt</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-3 ">
+                                        <div class="ingredient-a " onclick="deselectIngredient3() ">
+                                            <img class="ingredient-icon " id="ingredient-icon-a3" alt="garlic " src="src/img/pumpkin_soup_recipe/garlic.png " />
+                                            <div class="ingredient-text " id="numb4">1 glove of
+                                                <p>Garlic</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="ingredient-b " onclick=" ">
+                                            <img class="ingredient-icon " alt="pepper " src="src/img/pumpkin_soup_recipe/pepper.png " />
+                                            <div class="ingredient-text ">Pepper</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_selected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_deselected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+
+                </div>
+            </section>
+            <!-----------------
+
+###############################################
+########## HELP INGREDIENTS MISSING ###########
+############################################### 
+
+---------------->
+            <section id="info-what-you-need">
+                <div class="overlap-group-info-what-you-need">
+                    <div class="info-what-you-need-container border-5px-green2---fdy">
+                        <div class="flex-row-info">
+                            <div class="still-some-ingredients-missing ">Still some ingredients missing...?</div>
+                            <a href="javascript:HideOverlay('close', 'animate-disappear');">
+                                <div class="close" id="close-info-ingredient">
+                                    <div class="overlap-group-close">
+                                        <img class="cancel" src="src/svg/close.svg" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="info-text inter-medium-white-14px">
+                            If you are still missing ingredients, please deselect them by clicking on the icon. Either an alternative ingredient will be suggested or new recipe suggestions will be brought to you.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------
+
+###############################################
+############### INFO DESELECTING INGR #########
+############################################### 
+
+---------------->
+            <!-- for deselecting ingredients that are missing! -->
+            <section id="remove-ingredient">
+                <div class="overlap-group-remove-ingredient">
+                    <div class="remove-ingredient-info border-5px-green2---fdy">
+                        <div class="flex-row">
+                            <div class="remove-ingredient-heading inter-medium-white-18px">
+                                You do not have a<br />Hokkaido Pumpkin...?
+                            </div>
+                            <a href="javascript:HideOverlay('remove-ingredient', 'animate-disappear');">
+                                <div class="close" id="close-remove-ingredient">
+                                    <div class="overlap-group-close">
+                                        <img class="cancel" src="src/svg/close.svg" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="text-do-you-have inter-medium-white-14px">
+                            No, worries. Use another type of pumpkin instead or remove it from the pantry &amp; get new recipes suggested.
+                        </p>
+                        <div class="alternatives">
+                            <div class="alternative1">
+                                <img class="pumpkin-1" src="src/img/pumpkin_soup_recipe/pumpkin_alternative1.png" />
+                                <div class="alternative-text inter-normal-white-12px">1 Butternut <br />Pumpkin</div>
+                            </div>
+                            <div class="alternative2">
+                                <img class="pumpkin-2" src="src/img/pumpkin_soup_recipe/pumpkin_alternative2.png" />
+                                <div class="alternative-text inter-normal-white-12px">1 Cucurbita <br />Pepo</div>
+                            </div>
+                            <div class="alternative3">
+                                <img class="pumpkin-3" src="src/img/pumpkin_soup_recipe/pumpkin_alternative3.png" />
+                                <div class="alternative-text inter-normal-white-12px">1 Cucurbita<br />maxima</div>
+                            </div>
+                        </div>
+                        <p class="text-do-you-have2 inter-medium-white-14px">
+                            I really do not have a pumpkin at home. Let’s remove it from the pantry!
+                        </p>
+                        <div class="button-green-remove-ingredient position-button-remove-ingredient" id="button-remove-ingredient">
+                            <div class="button-green-text-remove-ingredient valign-text-middle">Remove Ingredient</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-----------------
+
+###############################################
+########## ADD INGREDIENTS TO PANTRY GREEN ####
+############################################### 
+
+---------------->
+            <section id="add-ingr-with-plus">
+                <div class="overlap-group-add-ingr">
+                    <div class="info-add-ingr-container">
+                        <div class="background-opacity"></div>
+                        <div class="close-pantry">
+                            <img id="close-overlap" src="src/svg/close_pantry.png" />
+                        </div>
+                        <div class="frame-pantry">
+                            <img class="line-overlap" src="src/svg/frame_line.svg" />
+                        </div>
+                        <div class="text-container-ap">
+                            <p class="inter-medium-white-16px text-pantry">Which ingredient do you want to add to your pantry?</p>
+                        </div>
+                        <div class="input-field"><input type="text" class="input-pantry" id="input-ingr" placeholder="e.g. apple"></div>
+                        <div class="text-container-ap1">
+                            <p class="inter-medium-white-16px text-pantry">In which container shall we put the ingredient?</p>
+                        </div>
+                        <div class="category-option-container">
+                            <div class="padding">
+                                <img id="category1" alt="vegetables" src="src/svg/category_ingredients_vege_gray.svg">
+                            </div>
+                            <div class="padding">
+                                <img id="category2" alt="diaries" src="src/svg/category_ingredients_diaries_gray.svg">
+                            </div>
+                            <div class="padding">
+                                <img id="category3" alt="fish and seafood" src="src/svg/category_ingredients_fish_gray.svg">
+                            </div>
+                            <div class="padding">
+                                <img id="category4" alt="fruits" src="src/svg/category_ingredients_fruits_gray.svg">
+                            </div>
+                            <div class="padding">
+                                <img id="category5" alt="meat" src="src/svg/category_ingredients_meat_gray.svg">
+                            </div>
+                            <div class="padding">
+                                <img id="category6" alt="pasta" src="src/svg/category_ingredients_pasta_gray.svg">
+                            </div>
+                            <div class="padding">
+                                <img id="category7" alt="cereals grains" src="src/svg/category_ingredients_cereals_gray.svg">
+                            </div>
+                        </div>
+                        <div class="button-green-add-pantry" id="button-green-add-pantry" onclick="addIngredient()">
+                            <p class="button-green-text text20" id="text20">add to pantry</p>
+                        </div>
+                        <div class="invisible button-selected-add-pantry" id="button-selected-add-pantry">
+                            <img class="invisible check-add-with-plus" id="check1" alt="check" src="src/svg/Checkbox.svg">
+                            <p class="invisible button-green-text text21" id="text21">added to pantry</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-----------------
+
+#######################################
+############ RECIPE VIDEO #############
+####################################### 
+
+---------------->
+            <section id="recipe-video">
+                <div class="overlap-group4">
+                    <!-- background style -->
+                    <video id="video-play" width="320" height="240" controls>
+                        <source src="src/video/pumpkin-soup.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+
+                    <!-- recipe data -->
+                    <div class="rectangle-1"> </div>
+                    <div class="overlap-group-back">
+                        <img class="back back-icon" id="back-to-recipe" src="src/svg/back_arrow.svg" />
+                    </div>
+                    <div class="data">
+                        <div class="pumpkin-soup inter-fontweight500-white-16px">PUMPKIN SOUP</div>
+                        <div class="data-info">
+                            <div class="likes">
+                                <img class="likes-icon" alt="like icon" src="src/svg/heart_small.svg" />
+                                <div class="text-likes inter-medium-white-14px">- 245</div>
+                            </div>
+                            <div class="time">
+                                <img class="time-icon" alt="time icon" src="src/svg/time.svg" />
+                                <div class="text-time inter-medium-white-14px">- 30 min.</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- navigation bar -->
+                    <div class="tab-bar">
+                        <div class="home">
+                            <img class="home-icon" alt="foodiyo home" src="src/svg/home_selected.svg" />
+                            <div class="home-text inter-medium-white-9px">home</div>
+                        </div>
+                        <div class="cookbook">
+
+                            <img class="cookbook-icon" alt="foodiyo cookbook" src="src/svg/cookbook_deselected.svg" />
+                            <div class="cookbook-text inter-medium-white-9px">cookbook</div>
+
+                        </div>
+                        <div class="pantry">
+                            <img class="pantry-icon" alt="foodiyo pantry" src="src/svg/pantry_deselected.svg" />
+                            <div class="pantry-text inter-medium-white-9px">pantry</div>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-icon" alt="foodiyo profile" src="src/svg/user_profile.svg" />
+                            <div class="profile-text inter-medium-white-9px">profile</div>
+                        </div>
+                    </div>
+                    <!-- android bottom bar -->
+                    <img class="bottom-bar-video" src="src/svg/bottom_bar.svg" />
+
+                </div>
+
+            </section>
+            <!-----------------
+
+#######################################
+############# YOU ARE SET #############
+####################################### 
+
+---------------->
+            <section id="you-are-set">
+                <div class="overlap-group8">
+                    <div class="overlap-group3">
+                        <!-- background style -->
+                        <img class="animation-cooking" src="src/gif/animation_cooking.gif" />
+                        <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                        <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                        <div class="headline">
+                            Yay, you are all set!
+                        </div>
+                        <p class="text-1 inter-medium-white-16px">
+                            we are choosing some <br />awesome recipes <br />for you
+                        </p>
+
+                        <img class="progress" src="src/svg/progress1-1.svg" />
+                    </div>
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------
+
+#######################################
+########## UPDATING RECIPES ###########
+####################################### 
+
+---------------->
+            <section id="updating-recipes">
+                <div class="overlap-group8">
+                    <div class="overlap-group3">
+                        <!-- background style -->
+                        <img class="animation-cooking" src="src/gif/animation_cooking.gif" />
+                        <img class="rectangle-78-1" src="src/svg/Rectangle 78-1.svg" />
+                        <img class="rectangle-79-1" src="src/svg/Rectangle 79-1.svg" />
+
+                        <div class="headline2 position">
+                            FOODIYO
+                        </div>
+
+                        <p class="text-2 inter-medium-white-20px">
+                            ... updating recipes ...
+                        </p>
+
+                        <p class="text-1 inter-medium-white-16px">
+                            we are choosing some <br />awesome recipes <br />for you
+                        </p>
+                    </div>
+                    <img class="logo" alt="logo foodiyo" src="src/svg/logo.svg" />
+                    <!-- android bottom bar -->
+                    <div class="bottom-bar">
+                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
+                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
+                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

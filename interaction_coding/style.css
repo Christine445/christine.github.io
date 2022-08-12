@@ -16,8 +16,19 @@ body {
   color: #5C5C61;
 }
 
-.background-deco-hello {
-  background-color: #E0EBE8;
-  color: #fff;
-  position: relative;
+a#plants{
+  text-decoration: none;
+}
+
+.topnav{
+  overflow: hidden;
+  background-color: #097969;
+  color: white;
+}
+
+.material-icons.search{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
 }
