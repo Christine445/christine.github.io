@@ -28,25 +28,18 @@
 ##################################
 
 ---------------*/
-
 a {
-  text-decoration: none;
+ text-decoration: none;
 }
 
 .topnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   background-color: var(--green);
   color: white;
-  text-decoration: none;
-}
-
-.material-icons.search{
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .material-icons.menu{
@@ -56,6 +49,27 @@ a {
   color: white;
   padding: 10px;
   cursor: pointer;
+}
+
+.material-icons.search{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#plantlist .heading-plantlist {
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+#plantlist .menu-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #plantlist .plants-container {
@@ -71,7 +85,7 @@ a {
     padding: 10px;
 }
 
-.box-plant {
+#plantlist .box-plant {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
