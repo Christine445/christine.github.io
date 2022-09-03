@@ -139,11 +139,22 @@ p {
   line-height: 1.8rem;
 }
 
+.text-grey-bg {
+  color: var(--darkgrey);
+}
+
 .section-title {
   font-size: 20px;
   font-weight: 500;
   padding-top: 10px;
   color: var(--grey2);
+}
+
+.section-title-dark {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+  color: var(--darkgrey);
 }
 
 .section-sub-title {
@@ -436,21 +447,6 @@ a .site-title {
   -webkit-transition: all 0.7s ease
 }
 
-/* Ending Screen */
-.hand-right-float {
-  float: right;
-  width: 30%;
-  margin-bottom: -450px;
-  position: relative;
-}
-
-.hand-left-float {
-  float: left;
-  width: 30%;
-  margin-top: -450px;
-  position: relative;
-}
-
 /* Responsive Section for Reflection */
 @media only screen and (max-width: 768px) {
   .hand-right-float {
@@ -478,7 +474,7 @@ a .site-title {
 }
 
 .btn {
-  background-color: #21364B;
+  background-color: var(--green---fdy);
   border: none;
   padding: 15px 30px;
   margin: 20px 40px;
@@ -486,9 +482,9 @@ a .site-title {
 }
 
 .btn:hover {
-  transform: translatey(-10px);
-  box-shadow: 0 20px 15px -15px rgb(143, 143, 143);
-  background-color: #31355B;
+  /* transform: translatey(-10px); */
+  box-shadow: 0 10px 10px -10px rgb(143, 143, 143);
+  background-color: var(--green3);
 }
 
 .btn-primary {

@@ -55,15 +55,15 @@
     </div>
   </nav>
 
-    <!--   Header / Intro   -->
-    <section id="robotic-hand-intro">
-      <div class="container-fluid header">
-        <div class="row no-gutter">
-          <div class="col-md-12 col-sm-12 col-xs-12 mobile-header">
-            <img src="assets/img/foodiyo/header_foodiyo.png" alt="Screenshots of the App Foodiyo" class="img-fluid header-pic fadeIn animated">
-          </div>
+  <!--   Header / Intro   -->
+  <section id="robotic-hand-intro">
+    <div class="header">
+      <div class="row no-gutter">
+        <div class="col-md-12 col-sm-12 col-xs-12 mobile-header">
+          <img src="assets/img/foodiyo/header_foodiyo.png" alt="Screenshots of the App Foodiyo" class="img-fluid header-pic fadeIn animated">
         </div>
       </div>
+    </div>
 
     <div class="container spacer fadeInLeft animated">
       <div class="row">
@@ -78,7 +78,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-8 col-xs-12">
           <h2 class="section-title">Overview</h2>
-          <p> The goal of this project was to create an App to support people in finding recipe inspirations with ingredients they already have at home to prepare great dishes.</p>
+          <p> The goal of this project was to create an app to support people in finding recipe inspirations with ingredients they already have at home to prepare great dishes. The App was created during the Interaction Prototyping course of the Technical University of Munich. </p>
         </div>
         <div class="col-md-5 col-sm-5 col-xs-12">
           <div class="row">
@@ -112,7 +112,8 @@
       <div class="col-md-12 col-sm-12 col-xs-12 spacer">
         <h2 class="sprint-title text-center">Research</h2>
         <h2 class="section-title">User Research</h2>
-        <p>We started our project by conducting user interview to determine the most important user needs for our project. A lot of people are worried about not having all the ingredients at home for certain dishes and they are often struggle in finding recipes with the ingredients they got in their pantry.</p>
+        <p>The most important user needs were determined by conducting user interviews. A lot of people are worried about not having all the ingredients at home for certain dishes and they are often struggle in finding recipes with the ingredients
+          they got in their pantry.</p>
         <br>
       </div>
     </div>
@@ -134,8 +135,8 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 spacer">
           <h2 class="sprint-title text-center">Prototyping</h2>
-          <h2 class="section-title">Concept</h2>
-          <p>The prototypes were developed for the <a class="link-hand hover-effect" data-hover="Roboy Project" href="https://www.roboy.org" target="_blank">Roboy Project</a> at the <a class="link-hand hover-effect"
+          <h2 class="section-title-dark">Concept</h2>
+          <p class="text-grey-bg">The prototypes were developed for the <a class="link-hand hover-effect" data-hover="Roboy Project" href="https://www.roboy.org" target="_blank">Roboy Project</a> at the <a class="link-hand hover-effect"
               data-hover="Technical University Munich" href="https://www.tum.de/en/" target="_blank">Technical University in Munich</a>, with the goal of designing and building an anthrophomorphic hand that can be adapted on the humanoid robot Roboy
             2.0. This project is aimed to develop prototype solutions for grasping and manipulation operations. The hand is composed by a palm and five independent fingers, each with 22 degrees of freedom (hereinafter, DoF), actuated by servomotors
             and tendons.</p>
@@ -146,31 +147,36 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <img src="assets/img/hand/DoF-finger.jpg" alt="Degree of Freedom for one Finger with the joints: DIP, PIP and MCP" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
-          <h2 class="section-title side-gutter">22 DoF & 20 servo motors</h2>
-          <p class="side-gutter">Each finger was designed with 4 DoFs, they are DIP flexion, PIP flexion, MCP flexion and MCP abduction. The wrist has 2 DoFs. Which makes in total 22 DoF driven by 20 servo motors.</p>
-          <img src="assets/img/hand/ROM_hand.jpg" alt="Range of Motion hand" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
-          <h2 class="section-title side-gutter">Range of Motion (RoM)</h2>
-          <p class="side-gutter">The PIP joint has a range of 110°, the DIP joint 70°(flexion) and the MCP joint up to the 30° (extension) and 90° (flexion), 35° abduction or abduction. The RoM of the wrist is: 0° - 20° (radial deviation), 0° -
-            30°(ulnar deviation), 0° - 80° (flexion) and 0° - 70° (extension).</p>
+          <img src="assets/img/foodiyo/flow1.png" alt="prototyping process user flow" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
+          <h2 class="section-title-dark side-gutter">Sketches</h2>
+          <p class="side-gutter text-grey-bg">Started with sketches to come up with a proper user flow. User test were conducted by using the "Thinking-aloud"-method.</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <img src="assets/img/hand/Igus_bearing.jpg" alt="Igus bearing" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
-          <h2 class="section-title side-gutter">Igus Bearing</h2>
-          <p class="side-gutter">Two Igus plastic bearings are inserted from the side into the axis. They are press connected and the outside surface of the bearing is glued with the inside surface of the shaft holder.</p>
-          <img src="assets/img/hand/wrist_hand.jpg" alt="wrist" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
-          <h2 class="section-title side-gutter">Robotic Wrist</h2>
-          <p class="side-gutter">The wrist has 2 DoFs. It is made out of two pair of pulley wheels, conneted to 4 tendons. It is equipped with plastic bearings, and two angle sensor on tiny electronic boards to determine precise controlling of the
-            wrist. Get to know how to fix the tendons: <a class="link-hand" data-hover="here" href="https://youtu.be/ZM3HTDPVTWM" target="_blank">here</a>. </p>
+          <img src="assets/img/foodiyo/flow2.png" alt="low fidelity prototype" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
+          <h2 class="section-title-dark side-gutter">Low-fidelity Prototype</h2>
+          <p class="side-gutter text-grey-bg">Created a low-fidelity prototype by using Figma with the main function "add ingredients to the digital pantry".</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <img src="assets/img/hand/band_system.jpg" alt="Band system of one Finger" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
-          <h2 class="section-title side-gutter">Band System</h2>
-          <p class="side-gutter">The band system in the hand works as the guiding tunnel as well as bearing of the most frictions and torque forces. Mimicking directly from human hand tendon sheaths can reduce lots of work.</p>
-          <img src="assets/img/hand/tendon_system.jpg" alt="Tendon system of one Finger" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
-          <h2 class="section-title side-gutter">Tendon Routing</h2>
-          <p class="side-gutter">The tendon routing system requires 6 tendons. They are tied around the finger parts, so that they have a fixed connection to the respective finger. Get to know how to fix the tendons: <a class="link-hand"
-              data-hover="here" href="https://youtu.be/yb_rW4fulYU" target="_blank">here</a>.</p>
+          <img src="assets/img/foodiyo/uml2.png" alt="UML diagram" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
+          <h2 class="section-title-dark side-gutter">UML Diagram</h2>
+          <p class="side-gutter text-grey-bg">The reqirements and high level functions of the applications are depicted in the UML use-case diagram.</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <img src="assets/img/foodiyo/design_principles.png" alt="design principles of the app Foodiyo" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
+          <h2 class="section-title-dark side-gutter">Design Principles</h2>
+          <p class="side-gutter text-grey-bg">Determined the most important design principles for the app.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <img src="assets/img/foodiyo/styleguide.png" alt="styleguide of the app foodiyo" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
+          <h2 class="section-title-dark side-gutter">Style Guide</h2>
+          <p class="side-gutter text-grey-bg">Implemented customized design language based on user feedback.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <img src="assets/img/foodiyo/ab_test.png" alt="A/B Testings of different design approaches" class="img-fluid finger-pic mx-auto d-block" data-action="zoom" style>
+          <h2 class="section-title-dark side-gutter">A/B Testing</h2>
+          <p class="side-gutter text-grey-bg">Conducted an A/B testing to decide on different color schemes and design approaches.</p>
         </div>
       </div>
     </div>
@@ -178,111 +184,39 @@
     <div class="container container-small">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-          <h2 class="section-title">Roboy's Hand-Arm System</h2>
-          <p>The goal of the Roboy project is to advance humanoid robotics to the state where robots are as capable as human bodies. It should be just as fast, versatile, robust and flexible as the human body. Roboy´s tendon driven anthropomorphic
-            hand closely mimics the human hand. The hand is perfect for signs: pointing, waving, fist-bump – or even mimicking Captain Spock. </p>
-          <img src="assets/img/hand/Roboy_hand.jpg" alt="Roboy hand-arm system adapted on the humanoid robot Roboy 2.0" class="img-fluid hand-pics" data-action="zoom">
+          <h2 class="section-title-dark">Quantitative Evaluation</h2>
+          <p class="text-grey-bg">Detemined the System Usability Scale (SUS), number of errors, the completion rate and the average task level satisfaction during the user tests.</p>
+          <img src="assets/img/foodiyo/evaluation.png" alt="person holding a smartphone showing the app foodiyo" class="img-fluid hand-pics" data-action="zoom">
           <p>
-            <figcaption>Roboy hand-arm system adapted on the humanoid robot Roboy 2.0.</figcaption>
+          <!-- <figcaption class="text-grey-bg">...</figcaption> -->
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!--    Robotic Hand     -->
-  <div class="container container-small">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-        <h2 class="sprint-title text-center">Demonstration</h2>
-        <h2 class="section-title">Prototypes</h2>
-        <p>After sucessfully testing our first prototype, we developed the final version of the robotic hand which has a more human-like look, a wrist, less servo motors and an improved tendon-routing system.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container container-large spacer">
-    <div class="row">
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <h2 class="section-title">Prototype 1</h2>
-        <p>The first prototype was developed independently from Roboy to test the design of five tendon driven fingers with the servo system driven by 25 motors.</p>
-      </div>
-      <div class="col-md-8 col-sm-8 col-xs-12">
-        <div class="container container-small">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/7NPCKiEPlrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="background-deco">
-    <div class="container container-small">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-          <h2 class="section-title">Now it's time to test the Prototypes for yourself!</h2>
-          <p style="font-style:italic; color:#591D95;">"Prototyping is the conversion you have with your ideas", -Tom Wujec</p>
-          <p>The CAD files and code can be found at Roboy's Github profile: <a class="link-hand hover-effect" data-hover="Link" href="https://github.com/Roboy/anthropomorphic-dexterous-robotic-hand/" target="_blank"> Link.
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="container container-small">
-        <figure>
-          <div class="videoWrapper">
-            <iframe src="https://myhub.autodesk360.com/ue280b4ee/shares/public/SH56a43QTfd62c1cd9684acc606f8cb8c88c?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
-              frameborder="0"></iframe>
-          </div>
-          <figcaption>Hand, Prototype 1, <a class="link-hand" href="www.roboy.org">Roboy Project</a>.</figcaption>
-        </figure>
-      </div>
-      <div class="container container-small">
-        <figure>
-          <div class="videoWrapper">
-            <iframe src="https://roboy.autodesk360.com/shares/public/SH7f1edQT22b515c761e6b1fb4d9f935fcc0?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
-          </div>
-          <figcaption>Hand-arm system, Prototype 2, <a class="link-hand" href="www.roboy.org">Roboy Project</a>.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-
+  <!--    Final Version of the Foodiyo App     -->
   <div class="container-fluid end-section">
     <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <img src="assets/img/hand/robotic-hand2.png" alt="Robotic Hand CAD right side" class="hand-right-float">
-      </div>
-    </div>
-    <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <h2 class="sprint-title">Reflecting</h2>
+        <h2 class="sprint-title">Final Prototype</h2>
         <div class="container container-small">
-          <p>It was an awesome project where we learned a lot from researching about biological tendon routing systems to designing and building the hand from scratch by using an Arduino, servo motors and further electronics. Our hand got even
-            implemented into the humanoid robot Roboy 2.0. Future work will include the following: a servo motor control system implemented into the arm for angle measurements on the hand joints and wrist as well as touch sensors on the finger tips.
-          </p>
+          <!-- <p>Future Work: integrating an auto-complete function to suggest ingredients for the digital pantry, adding notifications and improve the user interface.</p> -->
           <div class="container">
             <div class="row no-gutter">
               <div class="col-md-12 col-sm-12 col-xs-12">
-                <img src="assets/img/hand/Team2017.jpg" alt="team photo" class="img-fluid hand-pics" data-action="zoom">
-                <figcaption>Team photo: <a class="link-hand hover-effect" data-hover="Li Chen" href="https://www.linkedin.com/in/li-chen-86b219bb/" target="_blank">
-                    Li Chen</a>, <a class="link-hand hover-effect" data-hover="Rodrigo Moscso" href="https://www.linkedin.com/in/rodrigo-moscoso-cires-41591a107/" target="_blank"> Rodrigo Moscso</a> and <a class="link-hand hover-effect"
-                    data-hover="Christine" href="https://www.linkedin.com/in/chrissi-h/" target="_blank">Christine Dichtl</a> (from left to right).</figcaption> <br>
+                <div class="container container-small">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7NPCKiEPlrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
               </div>
             </div>
           </div>
-          <h4 class="contact-title">Get In Touch</h4>
-          <p style="font-weight:600;">Have any questions about our project? Let's talk! </p>
-          <a href="mailto:cdichtl.fs@gmail.com?Subject=Hello%20Christine" class="button btn btn-primary">Write me an Email</a>
+          <h4 class="contact-title">Test the Foodiyo App</h4>
+          <p style="font-weight:600;">Get recipe inspirations based on ingredients you got at home!</p>
+          <a href="https://interactionprototyping.github.io/WS2022_Pacman/v4/" target="_blank" class="button btn btn-primary">Test the Foodiyo App</a>
           </a>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <img src="assets/img/hand/robotic-hand.png" alt="Robotic Hand CAD left side" class="hand-left-float">
       </div>
     </div>
   </div>
@@ -294,16 +228,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-          <p class="section-title">You May Also Like</p>
+          <p class="section-title-dark">You May Also Like</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-6 justify-content-around hand-back next-spacer">
-          <a href="index.html#Projects" alt="Roboy Project" class="color-link-prev">
+          <a href="index.html#Projects" alt="Project Overview" class="color-link-prev">
             <p class="arrow">
-              < Previous</p> <h3 class="">Roboy Project</h3>
+              < Previous</p>
+                <h3 class="">Project Overview</h3>
           </a>
         </div>
         <div class="col-6 justify-content-around further-projects next-spacer">
